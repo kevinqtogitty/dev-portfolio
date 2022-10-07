@@ -1,8 +1,7 @@
 import { createStitches, keyframes } from '@stitches/react';
 import { animated } from 'react-spring';
-import { callbackify } from 'util';
 
-export const { styled } = createStitches({
+const { styled } = createStitches({
   media: {
     bp1: '(max-width: 810px)',
     bp2: '(max-width: 428px)',
@@ -124,7 +123,6 @@ const FrostedGlass = styled(animated('div'), {
 const ProjectDescription = styled('article', {
   width: '80%',
   backgroundColor: 'rgba(255, 255, 255, 0.1)',
-  // color: '#fff',
   fontSize: '1.3rem',
   lineHeight: '1.5rem',
   fontFamily: 'Gruppo',
@@ -140,10 +138,7 @@ const ProjectToolsContainer = styled(animated('div'), {
   display: 'flex',
   flexWrap: 'wrap',
   columnGap: '1rem',
-  // position: 'absolute',
-  // right: 'calc(100vw - 100%)',
   rowGap: '1rem',
-  // marginTop: '23rem',
 
   variants: {
     variant: {
@@ -169,12 +164,6 @@ const ProjectToolsContainer = styled(animated('div'), {
   },
 });
 
-// const GlassBackground = styled(animated('div'), {
-//   height: '35rem',
-//   width: '35rem',
-//   transform: 'scaleY(1) scaleX(-1) rotate(90deg)',
-// });
-
 const GlassProjectContainer = styled(animated('div'), {
   height: '20rem',
   width: '20rem',
@@ -194,7 +183,7 @@ const MainIntro = styled('div', {
   zIndex: '1',
   display: 'flex',
   color: '#000',
-  fontSize: '2rem',
+  fontSize: '3rem',
   padding: '1rem',
   position: 'absolute',
   left: '5rem',
@@ -205,6 +194,7 @@ const MainIntro = styled('div', {
 
   '@bp2': {
     left: '2rem',
+    fontSize: '2rem',
   },
 });
 

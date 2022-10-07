@@ -1,7 +1,7 @@
 import { createStitches } from '@stitches/react';
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 
-export const { styled } = createStitches({
+const { styled } = createStitches({
   media: {
     bp1: '(max-width: 810px)',
     bp2: '(max-width: 428px)',

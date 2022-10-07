@@ -19,7 +19,7 @@ import {
   Linkedin,
 } from '@styled-icons/simple-icons';
 
-export const { styled } = createStitches({
+const { styled } = createStitches({
   media: {
     bp1: '(max-width: 810px)',
     bp2: '(max-width: 428px)',

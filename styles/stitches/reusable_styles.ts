@@ -17,7 +17,6 @@ const AnimatedDiv = styled(animated('div'), {
   variants: {
     variant: {
       project1and3Div: {
-        // margin: '-10rem 7rem 0rem 0rem',
         position: 'relative',
         boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
         '@bp1': {
