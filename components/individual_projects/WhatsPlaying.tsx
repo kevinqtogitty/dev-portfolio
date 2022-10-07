@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { useSpring, config, useTrail, animated } from 'react-spring';
+import { useSpring, useTrail } from 'react-spring';
 import { ProjectInteractionWrapper } from '../../styles/stitches/developerIcon_styles';
 import {
-  GlassProjectContainer,
   FrostedGlass,
   ProjectDescription,
   ProjectToolsContainer,
 } from '../../styles/stitches/frostedGlass_styles';
 import {
+  AnimatedAnchor,
   AnimatedDiv,
   SmallTextContainer,
   StyledLI,
@@ -19,7 +19,6 @@ import {
   PictureAndToolsWrapper,
   ProjectSection,
 } from '../../styles/stitches/SiteSection_styles';
-import Image from 'next/image';
 
 const WhatsPlaying: React.FC = (): JSX.Element => {
   const [githubHovered, setGithubHovered] = useState<boolean>(false);
@@ -75,21 +74,15 @@ const WhatsPlaying: React.FC = (): JSX.Element => {
     }
   };
 
-  const leftArrowBounce = useSpring({
-    from: { transform: 'translateX(50px)', opacity: '1' },
-    to: { transform: 'translateX(0px)', opacity: '0' },
-    loop: true,
-    config: config.molasses,
-  });
-
   return (
     <ProjectSection variant="project2">
       <FrostedGlass variant="Cards" ref={proj2} style={Card2Animation}>
         What&apos;s Out In my Country?
         <ProjectDescription>
-          Using TMDB RESTful api I built a SPA that queries only currently
-          playing and upcoming films depending on the chosen country. Why? To
-          help alleviate &apos;paralysis by analysis&apos;.
+          A fullstack application which queries the TMDB database for currently
+          and upcoming films depending on the country you select. Allows a user
+          to create an account, login, and save/delete movies to & from their
+          watchlist which is stored in a database
           <br />
           <br />
           <StyledUL>
@@ -105,30 +98,22 @@ const WhatsPlaying: React.FC = (): JSX.Element => {
             <StyledLI> Fully responsive</StyledLI>
           </StyledUL>
           <ProjectInteractionWrapper>
-            <animated.a
+            <AnimatedAnchor
               href="https://www.github.com/kevinqtogitty/Whats-playing-in-my-country"
               style={githubHoverAnimation}
               onMouseEnter={() => handleHover(1)}
               onMouseLeave={() => handleHover(1)}
             >
               Source Code
-            </animated.a>
-            <animated.a
+            </AnimatedAnchor>
+            <AnimatedAnchor
               href="https://whatsplayinginmycountry.netlify.app/"
               style={liveHoverAnimation}
               onMouseEnter={() => handleHover(2)}
               onMouseLeave={() => handleHover(2)}
             >
               See it live
-            </animated.a>
-            <animated.div style={leftArrowBounce}>
-              <Image
-                src="/leftArrow.svg"
-                height={30}
-                width={30}
-                alt="left_arrow"
-              />
-            </animated.div>
+            </AnimatedAnchor>
           </ProjectInteractionWrapper>
         </ProjectDescription>
       </FrostedGlass>

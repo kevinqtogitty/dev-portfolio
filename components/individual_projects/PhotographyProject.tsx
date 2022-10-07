@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { useSpring, config, useTrail, animated } from 'react-spring';
+import { useSpring, useTrail } from 'react-spring';
 import { ProjectInteractionWrapper } from '../../styles/stitches/developerIcon_styles';
 import {
   FrostedGlass,
@@ -8,6 +8,7 @@ import {
   ProjectToolsContainer,
 } from '../../styles/stitches/frostedGlass_styles';
 import {
+  AnimatedAnchor,
   AnimatedDiv,
   SmallTextContainer,
   StyledLI,
@@ -18,9 +19,7 @@ import {
   ImageAnimated,
   PictureAndToolsWrapper,
 } from '../../styles/stitches/SiteSection_styles';
-import Image from 'next/image';
 import { createStitches } from '@stitches/react';
-// import { styled } from '@stitches/react';
 
 export const { styled } = createStitches({
   media: {
@@ -84,21 +83,15 @@ const PhotographyProject = () => {
     }
   };
 
-  const leftArrowBounce = useSpring({
-    from: { transform: 'translateX(50px)', opacity: '1' },
-    to: { transform: 'translateX(0px)', opacity: '0' },
-    loop: true,
-    config: config.molasses,
-  });
-
   return (
     <ProjectSection>
       <FrostedGlass variant="Cards" ref={proj1} style={Card1Animation}>
         Photography Portfolio
         <ProjectDescription>
-          My mobile friendly photography website
-          <br />
-          <br />
+          A desktop/mobile friendly website to host my personal photography
+          projects. Has a print store which uses the prebuilt checkout from the
+          Stripe API. Store cart state migrated from Context API to Redux
+          Toolkit. <br />
           <StyledUL>
             <StyledLI>
               {' '}
@@ -108,30 +101,22 @@ const PhotographyProject = () => {
             <StyledLI> React-Spring menu/shopping cart animations</StyledLI>
           </StyledUL>
           <ProjectInteractionWrapper>
-            <animated.a
+            <AnimatedAnchor
               href="https://www.github.com/kevinqtogitty/Kevinq.To-Photo"
               style={githubHoverAnimation}
               onMouseEnter={() => handleHover(1)}
               onMouseLeave={() => handleHover(1)}
             >
               Source Code
-            </animated.a>
-            <animated.a
+            </AnimatedAnchor>
+            <AnimatedAnchor
               href="https://www.kevinqtophoto.com"
               style={liveHoverAnimation}
               onMouseEnter={() => handleHover(2)}
               onMouseLeave={() => handleHover(2)}
             >
               See it live
-            </animated.a>
-            <animated.div style={leftArrowBounce}>
-              <Image
-                src="/leftArrow.svg"
-                height={30}
-                width={30}
-                alt="left_arrow"
-              />
-            </animated.div>
+            </AnimatedAnchor>
           </ProjectInteractionWrapper>
         </ProjectDescription>
       </FrostedGlass>

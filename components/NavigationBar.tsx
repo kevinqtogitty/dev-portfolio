@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavBar } from '../styles/stitches/navigation_styles';
+import { AnimatedLink, NavBar } from '../styles/stitches/navigation_styles';
 import { Link } from 'react-scroll';
 import { animated, useSpring } from 'react-spring';
 import {
@@ -28,10 +28,6 @@ const NavigationBar: React.FC = (): JSX.Element => {
     opacity: menuIsClicked ? 1 : 1,
     transform: menuIsClicked ? `translate(-150%, 30%)` : 'translate(0%, 0%)',
     delay: menuIsClicked ? 200 : 0,
-  });
-
-  const AnimatedLink = styled(animated(Link), {
-    cursor: 'pointer',
   });
 
   return (
