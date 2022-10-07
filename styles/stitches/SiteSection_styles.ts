@@ -69,7 +69,7 @@ const SiteSection = styled('section', {
         },
 
         '@bp2': {
-          height: '100vh',
+          height: '90vh',
         },
       },
     },
