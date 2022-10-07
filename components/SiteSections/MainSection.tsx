@@ -17,6 +17,12 @@ import {
 } from '../../styles/stitches/main_section_styles';
 
 const MainSection = () => {
+  const email: string = process.env.NEXT_PUBLIC_EMAIL!;
+  const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
+
+  const fullEmailToLink: string = `mailto:${email}`;
+  const githubFullUrl: string = `https://github.com/${github}`;
+
   const growAnimation = useSpring({
     from: { opacity: '0' },
     to: { opacity: '1' },
@@ -33,18 +39,10 @@ const MainSection = () => {
         >
           <LinkedinStyled />
         </a>
-        <a
-          href="https://github.com/kevinqtogitty"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={githubFullUrl} target="_blank" rel="noopener noreferrer">
           <GithubStyled />
         </a>
-        <a
-          href="mailto:kevinq.to@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
           <ResizableEmail>
             <Image src="/email.svg" height={50} width={50} alt="email"></Image>
           </ResizableEmail>

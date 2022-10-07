@@ -24,6 +24,13 @@ const ContactSection: React.FC = (): JSX.Element => {
   const [isGitActive, setIsGitActive] = useState<boolean>(false);
   const [isLinkedActive, setIsLinkedActive] = useState<boolean>(false);
 
+  const email: string = process.env.NEXT_PUBLIC_EMAIL!;
+  const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
+
+  const fullEmailToLink: string = `mailto:${email}`;
+  const githubFullUrl: string = `https://github.com/${github}`;
+  const formsubmitLink = `https://formsubmit.co/${email}`;
+
   const ButtonAnimation = useSpring({
     backgroundColor: isActive ? 'rgb(255, 255, 255)' : 'rgb(3, 2, 1)',
     color: isActive ? 'rgb(3, 2, 1)' : 'rgb(255, 255, 255)',
@@ -56,7 +63,7 @@ const ContactSection: React.FC = (): JSX.Element => {
 
   return (
     <SiteSection id="Page4" variant="ContactSection">
-      <StyledForm>
+      <StyledForm action={formsubmitLink} method="POST">
         <StyledFieldset>
           <legend>
             <h2>Say hello!</h2>
@@ -68,6 +75,7 @@ const ContactSection: React.FC = (): JSX.Element => {
               name="full_name"
               id="fullName"
               placeholder="John Doe"
+              required
             />
           </InputLabelWrapper>
 
@@ -78,6 +86,7 @@ const ContactSection: React.FC = (): JSX.Element => {
               name="email"
               id="email"
               placeholder="email@gmail.com"
+              required
             />
           </InputLabelWrapper>
         </StyledFieldset>
@@ -89,42 +98,33 @@ const ContactSection: React.FC = (): JSX.Element => {
         />
         <StyledButton
           style={ButtonAnimation}
+          type="submit"
           onMouseEnter={() => handleAnimation(1)}
           onMouseLeave={() => handleAnimation(1)}
         >
           Send
         </StyledButton>
+        <input type="hidden" name="_subject" value="Someone wants to talk!" />
+        <input type="hidden" name="_template" value="basic" />
       </StyledForm>
       <StyledConnectWithMeWrapper>
         <h2>Lets connect</h2>
         <StyledFindMeHere>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
             <LinkedinStyled
               style={LinkedinAnimation}
               onMouseEnter={() => handleAnimation(3)}
               onMouseLeave={() => handleAnimation(3)}
             />
           </a>
-          <a
-            href="https://github.com/kevinqtogitty"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={githubFullUrl} target="_blank" rel="noopener noreferrer">
             <GithubStyled
               style={GithubAnimation}
               onMouseEnter={() => handleAnimation(2)}
               onMouseLeave={() => handleAnimation(2)}
             />
           </a>
-          <a
-            href="mailto:kevinq.to@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
             <ResizableEmail>
               <Image
                 src="/email.svg"

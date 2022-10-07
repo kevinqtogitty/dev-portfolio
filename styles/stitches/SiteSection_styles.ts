@@ -1,9 +1,8 @@
 import { createStitches } from '@stitches/react';
-import { wrap } from 'module';
 import Image from 'next/image';
 import { animated } from 'react-spring';
 
-export const { styled } = createStitches({
+const { styled } = createStitches({
   media: {
     bp1: '(max-width: 810px)',
     bp2: '(max-width: 428px)',
@@ -89,7 +88,6 @@ const ProjectSection = styled('section', {
   wrap: 'nowrap',
   alignItems: 'center',
   justifyContent: 'space-between',
-  // marginLeft: '5rem',
   paddingLeft: '5rem',
   '@bp1': {
     flexDirection: 'column',

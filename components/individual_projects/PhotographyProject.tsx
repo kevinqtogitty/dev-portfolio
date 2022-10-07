@@ -3,7 +3,6 @@ import { useInView } from 'react-intersection-observer';
 import { useSpring, config, useTrail, animated } from 'react-spring';
 import { ProjectInteractionWrapper } from '../../styles/stitches/developerIcon_styles';
 import {
-  GlassProjectContainer,
   FrostedGlass,
   ProjectDescription,
   ProjectToolsContainer,

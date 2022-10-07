@@ -7,7 +7,8 @@ import {
   MenuItemText,
   FrostedGlass,
 } from '../styles/stitches/frostedGlass_styles';
-import { OrbitingElement, styled } from '../styles/stitches/blob_styles';
+import { OrbitingElement } from '../styles/stitches/blob_styles';
+import { styled } from '@stitches/react';
 
 const NavigationBar: React.FC = (): JSX.Element => {
   const [menuIsClicked, setMenuIsClicked] = useState<boolean>(false);
