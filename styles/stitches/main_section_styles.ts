@@ -36,7 +36,7 @@ const Resized = styled('div', {
   },
 });
 
-const Me = styled(animated('div'), {
+const Me = styled('div', {
   marginTop: '3rem',
   width: '15rem',
   '@bp2': {
