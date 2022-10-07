@@ -17,7 +17,7 @@ import {
   Me,
 } from '../../styles/stitches/main_section_styles';
 
-const MainSection = () => {
+const MainSection: React.FC = (): JSX.Element => {
   const email: string = process.env.NEXT_PUBLIC_EMAIL!;
   const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
 
