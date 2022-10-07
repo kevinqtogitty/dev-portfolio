@@ -180,13 +180,17 @@ const ProjectInteractionWrapper = styled('div', {
   fontSize: '1.2rem',
   justifyContent: 'center',
   padding: '.5rem',
-  backgroundColor: 'rgba(255, 255, 255, 1)',
-
+  border: '2px solid black',
+  backgroundColor: 'rgb(3, 2, 1)',
   width: 'fit-content',
   '& a': {
     textDecoration: 'none',
-    color: 'rgb(3, 2, 1)',
     fontFamily: 'Gruppo',
+    color: '#fff',
+  },
+
+  '@bp2': {
+    justifyContent: 'center',
   },
 });
 
