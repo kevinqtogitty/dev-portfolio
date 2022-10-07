@@ -27,13 +27,10 @@ const Resized = styled('div', {
     top: '35rem',
     left: '0rem',
   },
-<<<<<<< HEAD
 
   '@bp2': {
     top: '40rem',
   },
-=======
->>>>>>> 86fc03c87259cfaa4816dea2ce8de7be79a9b9f5
 });
 
 const SvgTitleContainer = styled('div', {
