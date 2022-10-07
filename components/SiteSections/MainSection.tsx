@@ -62,11 +62,7 @@ const MainSection: React.FC = (): JSX.Element => {
             src="/corner-down-right (1).svg"
             alt="arrow"
           />
-          <Me>
-            Frontend Engineer
-            <br />
-            Photographer
-          </Me>
+          <Me>Fullstack Engineer</Me>
         </Resized>
       </SvgTitleContainer>
     </SiteSection>
