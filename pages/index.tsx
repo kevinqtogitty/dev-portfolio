@@ -12,7 +12,7 @@ import {
   ProjectsHeaderWrapper,
 } from '../styles/stitches/SiteSection_styles';
 import { useInView } from 'react-intersection-observer';
-import { useSpring, config } from 'react-spring';
+import { useSpring } from 'react-spring';
 
 const Home: NextPage = () => {
   const { ref, inView } = useInView();
