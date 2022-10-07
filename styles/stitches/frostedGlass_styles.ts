@@ -126,8 +126,15 @@ const ProjectDescription = styled('article', {
   fontSize: '1.3rem',
   lineHeight: '1.5rem',
   fontFamily: 'Gruppo',
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+
   '@bp1': {
     fontSize: '1rem',
+  },
+  '@bp2': {
+    fontSize: '.8rem',
   },
 });
 
