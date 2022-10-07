@@ -82,8 +82,12 @@ const ProjectDescription = styled('div', {
 const StyledUL = styled('ul', {});
 
 const StyledLI = styled('li', {
-  listStyle: 'dash',
+  // listStyle: '⟢',
   fontFamily: 'Gruppo',
+
+  '&::marker': {
+    content: '⟢  ',
+  },
 });
 
 const ResizableEmail = styled('div', {
@@ -94,8 +98,15 @@ const ResizableEmail = styled('div', {
   },
 });
 
+const AnimatedAnchor = styled(animated('a'), {
+  '@bp2': {
+    fontSize: '.9rem',
+  },
+});
+
 export {
   AnimatedDiv,
+  AnimatedAnchor,
   SmallTextContainer,
   ProjectDescription,
   StyledUL,
