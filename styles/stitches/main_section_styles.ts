@@ -32,7 +32,7 @@ const Resized = styled('div', {
   '@bp2': {
     width: '20rem',
     position: 'absolute',
-    top: '-10rem',
+    // top: '-10rem',
   },
 });
 
