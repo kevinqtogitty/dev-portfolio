@@ -1,7 +1,7 @@
 import React from 'react';
-import { styled } from '@stitches/react';
+import { StyledFooter, StyledSpan } from '../styles/stitches/footer_styles';
 
-const Footer = () => {
+const Footer: React.FC = (): JSX.Element => {
   return (
     <StyledFooter>
       <StyledSpan>
@@ -12,16 +12,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-const StyledFooter = styled('footer', {
-  padding: '1rem',
-  display: 'flex',
-  alignItem: 'center',
-  justifyContent: 'flex-start',
-  backgroundColor: 'rgb(235, 227, 216)',
-});
-
-const StyledSpan = styled('span', {
-  fontSize: '1rem',
-  fontFamily: 'Gruppo',
-});

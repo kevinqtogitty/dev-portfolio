@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 import { AnimatedLink, NavBar } from '../styles/stitches/navigation_styles';
-import { Link } from 'react-scroll';
-import { animated, useSpring } from 'react-spring';
+import { useSpring } from 'react-spring';
 import {
   MenuItemContainer,
   MenuItemText,
   FrostedGlass,
 } from '../styles/stitches/frostedGlass_styles';
 import { OrbitingElement } from '../styles/stitches/blob_styles';
-import { styled } from '@stitches/react';
 
 const NavigationBar: React.FC = (): JSX.Element => {
   const [menuIsClicked, setMenuIsClicked] = useState<boolean>(false);

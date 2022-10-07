@@ -29,7 +29,7 @@ const ContactSection: React.FC = (): JSX.Element => {
 
   const fullEmailToLink: string = `mailto:${email}`;
   const githubFullUrl: string = `https://github.com/${github}`;
-  const formsubmitLink = `https://formsubmit.co/${email}`;
+  const formsubmitLink: string = `https://formsubmit.co/${email}`;
 
   const ButtonAnimation = useSpring({
     backgroundColor: isActive ? 'rgb(255, 255, 255)' : 'rgb(3, 2, 1)',
@@ -45,7 +45,6 @@ const ContactSection: React.FC = (): JSX.Element => {
   });
 
   const handleAnimation: Function = (key: number): void => {
-    console.log('hello');
     switch (key) {
       case 1:
         setIsActive((state) => !state);

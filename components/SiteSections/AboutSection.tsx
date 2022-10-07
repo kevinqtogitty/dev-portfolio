@@ -26,8 +26,8 @@ import {
   ViteStyled,
 } from '../../styles/stitches/developerIcon_styles';
 
-const AboutSection = () => {
-  const { ref: myRef, inView: elementIsInView } = useInView({
+const AboutSection: React.FC = (): JSX.Element => {
+  const { ref, inView } = useInView({
     threshold: 0.5,
   });
 
@@ -52,19 +52,19 @@ const AboutSection = () => {
   ];
 
   const aboutCardAnimation = useSpring({
-    transform: elementIsInView ? 'translateY(0%)' : 'translateY(-20%)',
-    opacity: elementIsInView ? 1 : 0,
+    transform: inView ? 'translateY(0%)' : 'translateY(-20%)',
+    opacity: inView ? 1 : 0,
     config: config.molasses,
   });
 
   const trailAnimation = useTrail(icons.length, {
-    opacity: elementIsInView ? 1 : 0,
-    transform: elementIsInView ? 'translateY(0%)' : 'translateY(-20%)',
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translateY(0%)' : 'translateY(-20%)',
     config: config.wobbly,
   });
   const trailAnimation2 = useTrail(learning.length, {
-    opacity: elementIsInView ? 1 : 0,
-    transform: elementIsInView ? 'translateY(0%)' : 'translateY(-20%)',
+    opacity: inView ? 1 : 0,
+    transform: inView ? 'translateY(0%)' : 'translateY(-20%)',
     config: config.wobbly,
   });
 
@@ -81,7 +81,7 @@ const AboutSection = () => {
         with more backend services, so I can deliver richer experiences for my
         end users
       </Card>
-      <AnimatedDiv variant="devContainer" ref={myRef}>
+      <AnimatedDiv variant="devContainer" ref={ref}>
         <IconHeader>My Toolkit</IconHeader>
         <AnimatedDiv variant="devIcons">
           {trailAnimation.map((animation, index: any) => (

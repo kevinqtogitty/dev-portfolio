@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { SiteSection } from '../../styles/stitches/SiteSection_styles';
 import { Blob } from '../../styles/stitches/blob_styles';
 import { MainIntro } from '../../styles/stitches/frostedGlass_styles';

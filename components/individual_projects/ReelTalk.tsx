@@ -20,7 +20,7 @@ import {
   ProjectSection,
 } from '../../styles/stitches/SiteSection_styles';
 
-const ReelTalk = () => {
+const ReelTalk: React.FC = (): JSX.Element => {
   const [githubHovered, setGithubHovered] = useState<boolean>(false);
   const [liveHovered, setLiveHovered] = useState<boolean>(false);
 

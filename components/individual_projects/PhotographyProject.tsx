@@ -28,7 +28,7 @@ export const { styled } = createStitches({
   },
 });
 
-const PhotographyProject = () => {
+const PhotographyProject: React.FC = (): JSX.Element => {
   const [githubHovered, setGithubHovered] = useState<boolean>(false);
   const [liveHovered, setLiveHovered] = useState<boolean>(false);
 
@@ -45,7 +45,7 @@ const PhotographyProject = () => {
     'CloudFlare CDN',
   ];
 
-  const { ref: proj1, inView } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.1,
   });
 
@@ -85,7 +85,7 @@ const PhotographyProject = () => {
 
   return (
     <ProjectSection>
-      <FrostedGlass variant="Cards" ref={proj1} style={Card1Animation}>
+      <FrostedGlass variant="Cards" ref={ref} style={Card1Animation}>
         Photography Portfolio
         <ProjectDescription>
           A desktop/mobile friendly website to host my personal photography

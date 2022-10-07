@@ -36,7 +36,7 @@ const WhatsPlaying: React.FC = (): JSX.Element => {
     'Netlify',
   ];
 
-  const { ref: proj2, inView } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0.2,
   });
 
@@ -76,7 +76,7 @@ const WhatsPlaying: React.FC = (): JSX.Element => {
 
   return (
     <ProjectSection variant="project2">
-      <FrostedGlass variant="Cards" ref={proj2} style={Card2Animation}>
+      <FrostedGlass variant="Cards" ref={ref} style={Card2Animation}>
         What&apos;s Out In my Country?
         <ProjectDescription>
           A fullstack application which queries the TMDB database for currently

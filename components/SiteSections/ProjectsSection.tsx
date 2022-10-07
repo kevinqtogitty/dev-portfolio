@@ -5,7 +5,7 @@ import PhotographyProject from '../individual_projects/PhotographyProject';
 import ReelTalk from '../individual_projects/ReelTalk';
 import WhatsPlaying from '../individual_projects/WhatsPlaying';
 
-const ProjectsSection = () => {
+const ProjectsSection: React.FC = (): JSX.Element => {
   return (
     <SiteSection id="Page3" variant="ProjectSection">
       <PhotographyProject />
