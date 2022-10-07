@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { SiteSection } from '../../styles/stitches/SiteSection_styles';
 import { Blob } from '../../styles/stitches/blob_styles';
-import { MainIntro, Me } from '../../styles/stitches/frostedGlass_styles';
+import { MainIntro } from '../../styles/stitches/frostedGlass_styles';
 import Image from 'next/image';
 import { useSpring, config } from 'react-spring';
 import {
@@ -14,6 +14,7 @@ import {
   ResizedImage,
   SvgTitleContainer,
   Resized,
+  Me,
 } from '../../styles/stitches/main_section_styles';
 
 const MainSection = () => {
@@ -61,12 +62,12 @@ const MainSection = () => {
             src="/corner-down-right (1).svg"
             alt="arrow"
           />
+          <Me>
+            Frontend Engineer
+            <br />
+            Photographer
+          </Me>
         </Resized>
-        <Me>
-          Frontend Engineer
-          <br />
-          Photographer
-        </Me>
       </SvgTitleContainer>
     </SiteSection>
   );

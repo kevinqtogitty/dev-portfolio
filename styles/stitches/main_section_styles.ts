@@ -1,4 +1,5 @@
 import { createStitches } from '@stitches/react';
+import { animated } from 'react-spring';
 
 const { styled } = createStitches({
   media: {
@@ -21,15 +22,25 @@ const ResizedImage = styled('div', {
 });
 
 const Resized = styled('div', {
-  left: '10rem',
-  top: '30rem',
-  '@bp1': {
-    top: '35rem',
-    left: '0rem',
-  },
+  display: 'flex',
+  flexWrap: 'nowrap',
+  height: 'fit-content',
+  width: '25rem',
+  alignItems: 'center',
+  top: '0rem',
 
   '@bp2': {
-    top: '40rem',
+    width: '20rem',
+    position: 'absolute',
+    top: '-10rem',
+  },
+});
+
+const Me = styled(animated('div'), {
+  marginTop: '3rem',
+  width: '15rem',
+  '@bp2': {
+    fontSize: '1rem',
   },
 });
 
@@ -64,4 +75,4 @@ const ContactMeWrapper = styled('div', {
   },
 });
 
-export { ContactMeWrapper, SvgTitleContainer, Resized, ResizedImage };
+export { ContactMeWrapper, SvgTitleContainer, Resized, ResizedImage, Me };

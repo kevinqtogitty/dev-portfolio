@@ -198,10 +198,6 @@ const MainIntro = styled('div', {
   },
 });
 
-const Me = styled(animated('div'), {
-  marginTop: '3rem',
-});
-
 const MenuItemContainer = styled(animated('div'), {
   position: 'fixed',
 
@@ -253,9 +249,7 @@ export {
   MainIntro,
   MenuItemContainer,
   MenuItemText,
-  // GlassBackground,
   GlassProjectContainer,
   ProjectDescription,
   ProjectToolsContainer,
-  Me,
 };
