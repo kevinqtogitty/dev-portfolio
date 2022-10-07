@@ -82,7 +82,6 @@ const ProjectDescription = styled('div', {
 const StyledUL = styled('ul', {});
 
 const StyledLI = styled('li', {
-  // listStyle: '⟢',
   fontFamily: 'Gruppo',
 
   '&::marker': {
