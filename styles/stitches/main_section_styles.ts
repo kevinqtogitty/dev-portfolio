@@ -56,6 +56,9 @@ const SvgTitleContainer = styled('div', {
     bottom: '19rem',
     left: '0rem',
   },
+  '@bp2': {
+    top: '27rem',
+  },
 });
 
 const ContactMeWrapper = styled('div', {
