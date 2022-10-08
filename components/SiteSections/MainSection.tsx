@@ -15,6 +15,7 @@ import {
   SvgTitleContainer,
   Resized,
   Me,
+  DownloadLink,
 } from '../../styles/stitches/main_section_styles';
 import NavigationBar from '../NavigationBar';
 
@@ -35,7 +36,7 @@ const MainSection: React.FC = (): JSX.Element => {
     <SiteSection variant="TitleSection" id="Page1">
       <ContactMeWrapper>
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/kevinqto"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -46,7 +47,12 @@ const MainSection: React.FC = (): JSX.Element => {
         </a>
         <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
           <ResizableEmail>
-            <Image src="/email.svg" height={50} width={50} alt="email"></Image>
+            <Image src="/email.svg" height={45} width={45} alt="email" />
+          </ResizableEmail>
+        </a>
+        <a href="/documents/KevinToCV.pdf" download>
+          <ResizableEmail>
+            <Image src="/cv.png" height={45} width={45} alt="CV" />
           </ResizableEmail>
         </a>
       </ContactMeWrapper>
@@ -60,13 +66,12 @@ const MainSection: React.FC = (): JSX.Element => {
           <Image
             height={200}
             width={200}
-            src="/corner-down-right (1).svg"
+            src="/corner-down-right.svg"
             alt="arrow"
           />
           <Me>Fullstack Engineer</Me>
         </Resized>
       </SvgTitleContainer>
-      {/* <NavigationBar /> */}
     </SiteSection>
   );
 };
