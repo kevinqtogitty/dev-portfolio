@@ -15,7 +15,7 @@ const SiteSection = styled('section', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  maxWidth: '1600px',
+  maxWidth: '1500px',
 
   variants: {
     variant: {
@@ -25,7 +25,6 @@ const SiteSection = styled('section', {
         alignItems: 'center',
         maxHeight: '800px',
         width: '100%',
-
         '@bp1': {
           height: '70vh',
         },
