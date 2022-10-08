@@ -7,10 +7,7 @@ import ContactSection from '../components/SiteSections/ContactSection';
 import ProjectsSection from '../components/SiteSections/ProjectsSection';
 
 import Footer from '../components/Footer';
-import {
-  BannerFill,
-  ProjectsHeaderWrapper,
-} from '../styles/stitches/SiteSection_styles';
+import { ProjectsHeaderWrapper } from '../styles/stitches/SiteSection_styles';
 import { useInView } from 'react-intersection-observer';
 import { useSpring } from 'react-spring';
 
