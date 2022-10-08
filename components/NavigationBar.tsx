@@ -9,7 +9,7 @@ import {
 import { OrbitingElement } from '../styles/stitches/blob_styles';
 
 const NavigationBar: React.FC = (): JSX.Element => {
-  const [menuIsClicked, setMenuIsClicked] = useState<boolean>(false);
+  const [menuIsClicked, setMenuIsClicked] = useState<boolean>(true);
 
   const projectsAnimation = useSpring({
     opacity: menuIsClicked ? 1 : 1,
