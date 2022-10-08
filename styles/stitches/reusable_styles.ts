@@ -87,13 +87,7 @@ const StyledLI = styled('li', {
   },
 });
 
-const ResizableEmail = styled('div', {
-  '@bp2': {
-    width: '2.5rem',
-    height: '2.8rem',
-    padding: '0rem',
-  },
-});
+const ResizableEmail = styled('div', {});
 
 const AnimatedAnchor = styled(animated('a'), {
   '@bp2': {
