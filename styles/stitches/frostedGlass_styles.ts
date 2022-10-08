@@ -30,8 +30,8 @@ const FrostedGlass = styled(animated('div'), {
   variants: {
     variant: {
       menuOrb: {
-        height: '8rem',
-        width: '8rem',
+        height: '6rem',
+        width: '6rem',
         borderRadius: '50%',
         padding: '2rem',
         backdropFilter: 'blur(500px)',
@@ -57,8 +57,8 @@ const FrostedGlass = styled(animated('div'), {
         padding: '2rem',
         backgroundColor: 'rgba(3, 2, 1, 1)',
         position: 'relative',
-        height: '5rem',
-        width: '5rem',
+        height: '4rem',
+        width: '4rem',
         animation: `${InfiniteRotate} 5s linear infinite`,
         '@bp1': {
           width: '3rem',
@@ -75,8 +75,8 @@ const FrostedGlass = styled(animated('div'), {
         backgroundColor: 'rgba(3, 2, 1, 1)',
 
         left: '0rem',
-        height: '5rem',
-        width: '5rem',
+        height: '4rem',
+        width: '4rem',
         position: 'relative',
         animation: `${InfiniteRotate} 5s linear infinite`,
         '@bp1': {
@@ -94,8 +94,8 @@ const FrostedGlass = styled(animated('div'), {
         backgroundColor: 'rgba(3, 2, 1, 1)',
 
         left: '0rem',
-        height: '5rem',
-        width: '5rem',
+        height: '4rem',
+        width: '4rem',
         position: 'relative',
         animation: `${InfiniteRotate} 5s linear infinite`,
         '@bp1': {
@@ -209,11 +209,16 @@ const MainIntro = styled('div', {
   fontSize: '3rem',
   padding: '1rem',
   position: 'absolute',
-  left: '5rem',
+  left: '10rem',
   lineHeight: '4rem',
   mixBlendMode: 'difference',
   filter: 'invert(1)',
   top: '13rem',
+
+  '@bp1': {
+    left: '3rem',
+    top: '16rem',
+  },
 
   '@bp2': {
     left: '2rem',
