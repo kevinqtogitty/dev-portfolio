@@ -39,7 +39,7 @@ const Blob = styled(animated('div'), {
   '@bp2': {
     width: '15rem',
     height: '15rem',
-    top: '8rem',
+    top: '5rem',
   },
 });
 
