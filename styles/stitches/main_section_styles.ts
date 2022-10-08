@@ -12,10 +12,12 @@ const ResizedImage = styled('div', {
   position: 'absolute',
   top: '-5rem',
   right: '3rem',
+
   '@bp1': {
     right: '0rem',
     top: '-6rem',
   },
+
   '@bp2': {
     display: 'none',
   },
@@ -52,7 +54,7 @@ const SvgTitleContainer = styled('div', {
   left: '13rem',
   top: '30rem',
   '@bp1': {
-    top: '35rem',
+    top: '37rem',
     left: '5rem',
   },
   '@bp2': {
@@ -80,10 +82,26 @@ const ContactMeWrapper = styled('div', {
   '@bp1': {
     left: '0rem',
   },
-
-  // '@bp2': {
-  //   left: '1rem',
-  // },
 });
 
-export { ContactMeWrapper, SvgTitleContainer, Resized, ResizedImage, Me };
+const DownloadLink = styled('a', {
+  color: '#000',
+  textDecoration: 'none',
+  position: 'absolute',
+  left: '3rem',
+  bottom: '.5rem',
+
+  '@bp2': {
+    left: '1rem',
+    bottom: '-2rem',
+  },
+});
+
+export {
+  ContactMeWrapper,
+  SvgTitleContainer,
+  Resized,
+  ResizedImage,
+  Me,
+  DownloadLink,
+};
