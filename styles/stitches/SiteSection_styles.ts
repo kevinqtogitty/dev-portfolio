@@ -4,7 +4,7 @@ import { animated } from 'react-spring';
 
 const { styled } = createStitches({
   media: {
-    bp1: '(max-width: 810px)',
+    bp1: '(max-width: 820px)',
     bp2: '(max-width: 428px)',
   },
 });
@@ -26,10 +26,11 @@ const SiteSection = styled('section', {
         maxHeight: '800px',
         width: '100%',
         '@bp1': {
-          height: '70vh',
+          height: '100vh',
         },
         '@bp2': {
-          width: '100vw',
+          border: '2px solid red',
+          width: '100%',
         },
       },
       ProjectSection: {
@@ -37,6 +38,9 @@ const SiteSection = styled('section', {
         backgroundSize: '100rem',
         flexDirection: 'column',
         width: '110vw',
+        '@bp1': {
+          width: '100%',
+        },
       },
       AboutSection: {
         backgroundImage: 'url("/terrain.svg")',
@@ -49,13 +53,13 @@ const SiteSection = styled('section', {
         '@bp1': {
           flexDirection: 'column',
           justifyContent: 'space-around',
-          padding: '1rem',
           height: '70vh',
+          border: '2px solid blue',
+          width: '100%',
         },
 
         '@bp2': {
           height: '120vh',
-          width: '100vw',
         },
       },
       ContactSection: {
@@ -66,21 +70,27 @@ const SiteSection = styled('section', {
         columnGap: '1rem',
         backgroundImage: 'url("/wave.jpg")',
         maxHeight: '700px',
+        // width: '100%',
+        border: '2px solid red',
 
         '@bp1': {
           height: '60vh',
-          paddingTop: '5rem',
-
+          // paddingTop: '5rem',
           rowGap: '1rem',
           flexDirection: 'column',
           justifyContent: 'space-around',
-          padding: '1rem',
+
+          // padding: '1rem',
           alignItems: 'center',
+          border: '2px solid red',
         },
 
         '@bp2': {
           height: '95vh',
           width: '100vw',
+          paddingLeft: '1.5rem',
+          paddingTop: '0rem',
+          paddingRight: '0rem',
         },
       },
     },
@@ -92,7 +102,7 @@ const ProjectSection = styled('section', {
   backgroundSize: '50rem',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'right',
-  width: '95%',
+  width: '90%',
   height: '100vh',
   maxHeight: '1000px',
   display: 'flex',
@@ -100,17 +110,17 @@ const ProjectSection = styled('section', {
   wrap: 'nowrap',
   alignItems: 'center',
   justifyContent: 'space-between',
-  paddingLeft: '5rem',
   '@bp1': {
     flexDirection: 'column',
     justifyContent: 'space-evenly',
-    padding: '1rem',
+    // padding: '1rem',
+    width: '100vw',
   },
 
   '@bp2': {
     alignItems: 'space-between',
     height: '120vh',
-    width: '100vw',
+    paddingLeft: '1rem',
   },
 
   variants: {
@@ -133,7 +143,8 @@ const PictureAndToolsWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  marginRight: '2rem',
+  marginRight: '-2rem',
+  border: '2px solid red',
   '@bp2': {
     marginRight: '0rem',
   },
@@ -148,21 +159,15 @@ const ImageAnimated = styled(Image, {
 });
 
 const ProjectsHeaderWrapper = styled(animated('div'), {
-  width: '100%',
+  width: '100vw',
   height: '4rem',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 
   color: 'rgb(255,255, 255)',
-  position: 'relative',
-});
-
-const BannerFill = styled(animated('div'), {
-  width: '100%',
-
   position: 'absolute',
-  height: '4rem',
+  border: '2px solid blue',
 });
 
 export {
@@ -170,6 +175,5 @@ export {
   ProjectSection,
   ImageAnimated,
   ProjectsHeaderWrapper,
-  BannerFill,
   PictureAndToolsWrapper,
 };
