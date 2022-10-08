@@ -22,9 +22,9 @@ const rotateAndMorph = keyframes({
 const Blob = styled(animated('div'), {
   position: 'absolute',
   top: '5rem',
-  left: '8rem',
-  width: '25rem',
-  height: '25rem',
+  left: '15rem',
+  width: '20rem',
+  height: '20rem',
   background: 'rgb(3, 2, 1)',
   transition: 'ease-in',
   animation: `${rotateAndMorph} 13s infinite alternate ease-in-out`,
