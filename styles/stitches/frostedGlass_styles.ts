@@ -216,13 +216,13 @@ const MainIntro = styled('div', {
   top: '13rem',
 
   '@bp1': {
-    left: '3rem',
+    left: '8rem',
     top: '16rem',
   },
 
   '@bp2': {
-    left: '2rem',
-    fontSize: '2rem',
+    left: '5rem',
+    fontSize: '1.5rem',
     top: '10rem',
   },
 });

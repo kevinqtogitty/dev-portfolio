@@ -33,13 +33,13 @@ const Blob = styled(animated('div'), {
     background: 'rgb(3, 2, 1)',
     width: '30rem',
     height: '30rem',
-    left: '5rem',
+    left: '8rem',
   },
 
   '@bp2': {
-    width: '15rem',
-    height: '15rem',
-    top: '5rem',
+    width: '12rem',
+    height: '12rem',
+    top: '7rem',
   },
 });
 

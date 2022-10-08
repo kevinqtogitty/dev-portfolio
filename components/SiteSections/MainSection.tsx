@@ -66,6 +66,7 @@ const MainSection: React.FC = (): JSX.Element => {
           <Me>Fullstack Engineer</Me>
         </Resized>
       </SvgTitleContainer>
+      {/* <NavigationBar /> */}
     </SiteSection>
   );
 };

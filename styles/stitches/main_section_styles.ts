@@ -52,8 +52,8 @@ const SvgTitleContainer = styled('div', {
   left: '13rem',
   top: '30rem',
   '@bp1': {
-    bottom: '19rem',
-    left: '0rem',
+    top: '35rem',
+    left: '5rem',
   },
   '@bp2': {
     top: '23.5rem',
@@ -78,12 +78,12 @@ const ContactMeWrapper = styled('div', {
   },
 
   '@bp1': {
-    left: '1.8rem',
+    left: '0rem',
   },
 
-  '@bp2': {
-    left: '1rem',
-  },
+  // '@bp2': {
+  //   left: '1rem',
+  // },
 });
 
 export { ContactMeWrapper, SvgTitleContainer, Resized, ResizedImage, Me };

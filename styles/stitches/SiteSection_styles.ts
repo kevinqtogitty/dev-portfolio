@@ -29,7 +29,6 @@ const SiteSection = styled('section', {
           height: '100vh',
         },
         '@bp2': {
-          border: '2px solid red',
           width: '100%',
         },
       },
@@ -54,7 +53,6 @@ const SiteSection = styled('section', {
           flexDirection: 'column',
           justifyContent: 'space-around',
           height: '70vh',
-          border: '2px solid blue',
           width: '100%',
         },
 
@@ -71,7 +69,6 @@ const SiteSection = styled('section', {
         backgroundImage: 'url("/wave.jpg")',
         maxHeight: '700px',
         // width: '100%',
-        border: '2px solid red',
 
         '@bp1': {
           height: '60vh',
@@ -82,13 +79,12 @@ const SiteSection = styled('section', {
 
           // padding: '1rem',
           alignItems: 'center',
-          border: '2px solid red',
         },
 
         '@bp2': {
           height: '95vh',
           width: '100vw',
-          paddingLeft: '1.5rem',
+          paddingLeft: '.5rem',
           paddingTop: '0rem',
           paddingRight: '0rem',
         },
@@ -120,7 +116,7 @@ const ProjectSection = styled('section', {
   '@bp2': {
     alignItems: 'space-between',
     height: '120vh',
-    paddingLeft: '1rem',
+    // paddingLeft: '1rem',
   },
 
   variants: {
@@ -144,7 +140,6 @@ const PictureAndToolsWrapper = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
   marginRight: '-2rem',
-  border: '2px solid red',
   '@bp2': {
     marginRight: '0rem',
   },
@@ -167,7 +162,6 @@ const ProjectsHeaderWrapper = styled(animated('div'), {
 
   color: 'rgb(255,255, 255)',
   position: 'absolute',
-  border: '2px solid blue',
 });
 
 export {

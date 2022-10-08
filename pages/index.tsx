@@ -25,16 +25,6 @@ const Home: NextPage = () => {
       </Head>
       <MainSection />
       <AboutSection />
-      <ProjectsHeaderWrapper ref={ref} style={BannerAnimation}>
-        <h1
-          style={{
-            color: 'rgb(255, 255, 255)',
-            justifySelf: 'center',
-          }}
-        >
-          Projects
-        </h1>
-      </ProjectsHeaderWrapper>
       <ProjectsSection />
       <ContactSection />
       <Footer />

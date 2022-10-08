@@ -21,9 +21,12 @@ const StyledForm = styled('form', {
   borderRadius: '16px',
 
   zIndex: '1',
-
-  padding: '1rem',
+  marginLeft: '2rem',
   alignItems: 'flex-start',
+
+  '@bp1': {
+    marginLeft: '0rem',
+  },
 });
 
 const InputLabelWrapper = styled('div', {

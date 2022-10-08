@@ -75,9 +75,7 @@ const SmallTextContainer = styled(animated('div'), {
   color: '#fff',
 });
 
-const ProjectDescription = styled('div', {
-  border: '2px solid green',
-});
+const ProjectDescription = styled('div', {});
 
 const StyledUL = styled('ul', {});
 
