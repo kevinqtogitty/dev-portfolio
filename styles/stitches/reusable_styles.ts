@@ -48,7 +48,7 @@ const AnimatedDiv = styled(animated('div'), {
       },
       devContainer: {
         position: 'absolute',
-        right: '10rem',
+        right: '5rem',
         alignItems: 'center',
         backgroundColor: 'rgba(255, 255, 255, .98)',
         borderRadius: '6px',
