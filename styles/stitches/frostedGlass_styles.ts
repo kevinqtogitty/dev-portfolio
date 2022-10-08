@@ -46,6 +46,10 @@ const FrostedGlass = styled(animated('div'), {
           width: '3rem',
           height: '3rem',
         },
+        '@bp2': {
+          width: '2rem',
+          height: '2rem',
+        },
       },
       aboutOrb: {
         borderRadius: '50%',
@@ -59,6 +63,10 @@ const FrostedGlass = styled(animated('div'), {
         '@bp1': {
           width: '3rem',
           height: '3rem',
+        },
+        '@bp2': {
+          width: '2rem',
+          height: '2rem',
         },
       },
       projectsOrb: {
@@ -75,6 +83,10 @@ const FrostedGlass = styled(animated('div'), {
           width: '3rem',
           height: '3rem',
         },
+        '@bp2': {
+          width: '2rem',
+          height: '2rem',
+        },
       },
       contactOrb: {
         borderRadius: '50%',
@@ -89,6 +101,10 @@ const FrostedGlass = styled(animated('div'), {
         '@bp1': {
           width: '3rem',
           height: '3rem',
+        },
+        '@bp2': {
+          width: '2rem',
+          height: '2rem',
         },
       },
 
@@ -248,6 +264,9 @@ const MenuItemText = styled('div', {
   color: '#fff',
   '@bp1': {
     fontSize: '.85rem',
+  },
+  '@bp2': {
+    fontSize: '.75rem',
   },
 });
 
