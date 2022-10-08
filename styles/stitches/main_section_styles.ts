@@ -57,7 +57,7 @@ const SvgTitleContainer = styled('div', {
     left: '0rem',
   },
   '@bp2': {
-    top: '21rem',
+    top: '23.5rem',
   },
 });
 
