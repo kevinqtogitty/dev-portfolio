@@ -71,10 +71,18 @@ const ContactMeWrapper = styled('div', {
   justifyContent: 'space-evenly',
   position: 'absolute',
   top: '0rem',
-  left: '1rem',
+  left: '2rem',
   padding: '1rem',
   '& a': {
     cursor: 'pointer',
+  },
+
+  '@bp1': {
+    left: '1.8rem',
+  },
+
+  '@bp2': {
+    left: '1rem',
   },
 });
 
