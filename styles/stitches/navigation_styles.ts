@@ -29,7 +29,7 @@ const NavBar = styled(NavigationMenu.Root, {
   },
 
   '@bp2': {
-    bottom: '10rem',
+    bottom: '5rem',
     right: '0rem',
   },
 });
