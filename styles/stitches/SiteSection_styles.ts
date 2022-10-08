@@ -25,6 +25,7 @@ const SiteSection = styled('section', {
         alignItems: 'center',
         maxHeight: '800px',
         width: '100%',
+        position: 'relative',
         '@bp1': {
           height: '100vh',
         },
