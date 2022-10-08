@@ -17,7 +17,6 @@ import { useSpring } from 'react-spring';
 const Home: NextPage = () => {
   const { ref, inView } = useInView();
   const BannerAnimation = useSpring({
-    transform: inView ? 'translateX(0%)' : 'translateX(100%)',
     backgroundColor: inView ? 'rgb(3,2,1)' : 'rgb(255, 255, 255)',
   });
   return (
@@ -29,13 +28,10 @@ const Home: NextPage = () => {
       </Head>
       <MainSection />
       <AboutSection />
-      <ProjectsHeaderWrapper ref={ref}>
-        <BannerFill ref={ref} style={BannerAnimation} />
+      <ProjectsHeaderWrapper ref={ref} style={BannerAnimation}>
         <h1
           style={{
             color: 'rgb(255, 255, 255)',
-            zIndex: '2',
-            paddingLeft: '1rem',
             justifySelf: 'center',
           }}
         >

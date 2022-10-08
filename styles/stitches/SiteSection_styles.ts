@@ -15,6 +15,7 @@ const SiteSection = styled('section', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+  maxWidth: '1600px',
 
   variants: {
     variant: {
@@ -22,21 +23,29 @@ const SiteSection = styled('section', {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        maxHeight: '800px',
+        width: '100%',
 
         '@bp1': {
           height: '70vh',
+        },
+        '@bp2': {
+          width: '100vw',
         },
       },
       ProjectSection: {
         height: 'fit-content',
         backgroundSize: '100rem',
         flexDirection: 'column',
+        width: '110vw',
       },
       AboutSection: {
         backgroundImage: 'url("/terrain.svg")',
         backgroundSize: '100rem',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
+        maxHeight: '1000px',
+        width: '100%',
 
         '@bp1': {
           flexDirection: 'column',
@@ -47,6 +56,7 @@ const SiteSection = styled('section', {
 
         '@bp2': {
           height: '120vh',
+          width: '100vw',
         },
       },
       ContactSection: {
@@ -56,6 +66,7 @@ const SiteSection = styled('section', {
         padding: '1rem',
         columnGap: '1rem',
         backgroundImage: 'url("/wave.jpg")',
+        maxHeight: '700px',
 
         '@bp1': {
           height: '60vh',
@@ -70,6 +81,7 @@ const SiteSection = styled('section', {
 
         '@bp2': {
           height: '95vh',
+          width: '100vw',
         },
       },
     },
@@ -81,8 +93,9 @@ const ProjectSection = styled('section', {
   backgroundSize: '50rem',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'right',
-  width: '100vw',
+  width: '95%',
   height: '100vh',
+  maxHeight: '1000px',
   display: 'flex',
   flexDirection: 'row',
   wrap: 'nowrap',
@@ -98,6 +111,7 @@ const ProjectSection = styled('section', {
   '@bp2': {
     alignItems: 'space-between',
     height: '120vh',
+    width: '100vw',
   },
 
   variants: {

@@ -50,14 +50,14 @@ const SvgTitleContainer = styled('div', {
   alignItems: 'center',
   position: 'absolute',
   left: '13rem',
-  bottom: '10rem',
-
+  top: '30rem',
   '@bp1': {
     bottom: '19rem',
     left: '0rem',
   },
   '@bp2': {
     top: '23.5rem',
+    left: '1rem',
   },
 });
 
@@ -71,7 +71,7 @@ const ContactMeWrapper = styled('div', {
   justifyContent: 'space-evenly',
   position: 'absolute',
   top: '0rem',
-  left: '0rem',
+  left: '1rem',
   padding: '1rem',
   '& a': {
     cursor: 'pointer',
