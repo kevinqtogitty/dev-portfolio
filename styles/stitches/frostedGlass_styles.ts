@@ -218,6 +218,7 @@ const MainIntro = styled('div', {
   '@bp2': {
     left: '2rem',
     fontSize: '2rem',
+    top: '10rem',
   },
 });
 
