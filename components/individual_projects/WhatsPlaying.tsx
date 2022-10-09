@@ -99,7 +99,7 @@ const WhatsPlaying: React.FC = (): JSX.Element => {
           </StyledUL>
           <ProjectInteractionWrapper>
             <AnimatedAnchor
-              href="https://www.github.com/kevinqtogitty/Whats-playing-in-my-country"
+              href="https://github.com/kevinqtogitty/whats-playing-in-my-country.git"
               style={githubHoverAnimation}
               onMouseEnter={() => handleHover(1)}
               onMouseLeave={() => handleHover(1)}

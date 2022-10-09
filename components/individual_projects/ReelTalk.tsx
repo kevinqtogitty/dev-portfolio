@@ -92,7 +92,7 @@ const ReelTalk: React.FC = (): JSX.Element => {
           </StyledUL>
           <ProjectInteractionWrapper>
             <AnimatedAnchor
-              href="https://github.com/kevinqtogitty/ReelTalkBlog2"
+              href="https://github.com/kevinqtogitty/rebuilt-reel-talk-blog"
               style={githubHoverAnimation}
               onMouseEnter={() => handleHover(1)}
               onMouseLeave={() => handleHover(1)}

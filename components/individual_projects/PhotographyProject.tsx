@@ -102,7 +102,7 @@ const PhotographyProject: React.FC = (): JSX.Element => {
           </StyledUL>
           <ProjectInteractionWrapper>
             <AnimatedAnchor
-              href="https://www.github.com/kevinqtogitty/Kevinq.To-Photo"
+              href="https://github.com/kevinqtogitty/rebuilt-personal-photo-website.git"
               style={githubHoverAnimation}
               onMouseEnter={() => handleHover(1)}
               onMouseLeave={() => handleHover(1)}
