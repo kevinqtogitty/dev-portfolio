@@ -62,7 +62,7 @@ const NavigationBar: React.FC = (): JSX.Element => {
           to="Page3"
           spy={true}
           smooth={true}
-          offset={-60}
+          offset={0}
           duration={500}
           onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
