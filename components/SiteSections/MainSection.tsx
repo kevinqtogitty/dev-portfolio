@@ -15,9 +15,7 @@ import {
   SvgTitleContainer,
   Resized,
   Me,
-  DownloadLink,
 } from '../../styles/stitches/main_section_styles';
-import NavigationBar from '../NavigationBar';
 
 const MainSection: React.FC = (): JSX.Element => {
   const email: string = process.env.NEXT_PUBLIC_EMAIL!;

@@ -87,7 +87,7 @@ const StyledLI = styled('li', {
   },
 });
 
-const ResizableEmail = styled('div', {});
+const ResizableEmail = styled(animated('div'), {});
 
 const AnimatedAnchor = styled(animated('a'), {
   '@bp2': {

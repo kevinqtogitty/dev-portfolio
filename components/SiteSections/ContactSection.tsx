@@ -23,6 +23,7 @@ const ContactSection: React.FC = (): JSX.Element => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const [isGitActive, setIsGitActive] = useState<boolean>(false);
   const [isLinkedActive, setIsLinkedActive] = useState<boolean>(false);
+  const [isEmailActive, setIsEmailActive] = useState<boolean>(false);
 
   const email: string = process.env.NEXT_PUBLIC_EMAIL!;
   const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
@@ -30,6 +31,7 @@ const ContactSection: React.FC = (): JSX.Element => {
   const fullEmailToLink: string = `mailto:${email}`;
   const githubFullUrl: string = `https://github.com/${github}`;
   const formsubmitLink: string = `https://formsubmit.co/${email}`;
+  const fullLinkedInLink: string = `https://www.linkedin.com/in/kevinqto/`;
 
   const ButtonAnimation = useSpring({
     backgroundColor: isActive ? 'rgb(255, 255, 255)' : 'rgb(3, 2, 1)',
@@ -37,11 +39,12 @@ const ContactSection: React.FC = (): JSX.Element => {
   });
   const GithubAnimation = useSpring({
     transform: isGitActive ? 'translateY(-5px)' : 'translateY(0px)',
-    color: isGitActive ? 'rgb(255, 255, 255)' : 'rgb(3, 2, 1)',
   });
   const LinkedinAnimation = useSpring({
     transform: isLinkedActive ? 'translateY(-5px)' : 'translateY(0px)',
-    color: isLinkedActive ? 'rgb(255, 255, 255)' : 'rgb(3, 2, 1)',
+  });
+  const EmailAnimation = useSpring({
+    transform: isEmailActive ? 'translateY(-5px)' : 'translateY(0px)',
   });
 
   const handleAnimation: Function = (key: number): void => {
@@ -54,6 +57,9 @@ const ContactSection: React.FC = (): JSX.Element => {
         break;
       case 3:
         setIsLinkedActive((state) => !state);
+        break;
+      case 4:
+        setIsEmailActive((state) => !state);
         break;
       default:
         break;
@@ -109,7 +115,7 @@ const ContactSection: React.FC = (): JSX.Element => {
       <StyledConnectWithMeWrapper>
         <h2>Lets connect</h2>
         <StyledFindMeHere>
-          <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
+          <a href={fullLinkedInLink} target="_blank" rel="noopener noreferrer">
             <LinkedinStyled
               style={LinkedinAnimation}
               onMouseEnter={() => handleAnimation(3)}
@@ -124,13 +130,12 @@ const ContactSection: React.FC = (): JSX.Element => {
             />
           </a>
           <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
-            <ResizableEmail>
-              <Image
-                src="/email.svg"
-                height={60}
-                width={60}
-                alt="email"
-              ></Image>
+            <ResizableEmail
+              style={EmailAnimation}
+              onMouseEnter={() => handleAnimation(4)}
+              onMouseLeave={() => handleAnimation(4)}
+            >
+              <Image src="/email.svg" height={60} width={60} alt="email" />
             </ResizableEmail>
           </a>
         </StyledFindMeHere>
