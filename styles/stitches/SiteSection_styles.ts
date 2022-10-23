@@ -69,16 +69,12 @@ const SiteSection = styled('section', {
         columnGap: '1rem',
         backgroundImage: 'url("/wave.jpg")',
         maxHeight: '700px',
-        // width: '100%',
 
         '@bp1': {
           height: '60vh',
-          // paddingTop: '5rem',
           rowGap: '1rem',
           flexDirection: 'column',
           justifyContent: 'space-around',
-
-          // padding: '1rem',
           alignItems: 'center',
         },
 
@@ -110,14 +106,12 @@ const ProjectSection = styled('section', {
   '@bp1': {
     flexDirection: 'column',
     justifyContent: 'space-evenly',
-    // padding: '1rem',
     width: '100vw',
   },
 
   '@bp2': {
     alignItems: 'space-between',
     height: '120vh',
-    // paddingLeft: '1rem',
   },
 
   variants: {
@@ -160,7 +154,6 @@ const ProjectsHeaderWrapper = styled(animated('div'), {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-
   color: 'rgb(255,255, 255)',
   position: 'absolute',
 });
