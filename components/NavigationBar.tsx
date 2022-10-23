@@ -6,7 +6,6 @@ import {
   MenuItemText,
   FrostedGlass,
 } from '../styles/stitches/frostedGlass_styles';
-import { OrbitingElement } from '../styles/stitches/blob_styles';
 
 const NavigationBar: React.FC = (): JSX.Element => {
   const [menuIsClicked, setMenuIsClicked] = useState<boolean>(true);
@@ -35,9 +34,7 @@ const NavigationBar: React.FC = (): JSX.Element => {
         onClick={() => setMenuIsClicked(!menuIsClicked)}
       >
         <MenuItemText>Menu</MenuItemText>
-        <FrostedGlass variant="menuOrb">
-          <OrbitingElement className="orbitingElement" />
-        </FrostedGlass>
+        <FrostedGlass variant="menuOrb" />
       </MenuItemContainer>
       <MenuItemContainer variant="subMenuItem" style={projectsAnimation}>
         <AnimatedLink
@@ -49,12 +46,7 @@ const NavigationBar: React.FC = (): JSX.Element => {
           onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
           <MenuItemText>About</MenuItemText>
-          <FrostedGlass variant="aboutOrb">
-            <OrbitingElement
-              className="orbitingElement"
-              variant="subMenuItem"
-            />
-          </FrostedGlass>
+          <FrostedGlass variant="aboutOrb" />
         </AnimatedLink>
       </MenuItemContainer>{' '}
       <MenuItemContainer variant="subMenuItem" style={aboutAnimation}>
@@ -67,12 +59,7 @@ const NavigationBar: React.FC = (): JSX.Element => {
           onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
           <MenuItemText>Projects</MenuItemText>
-          <FrostedGlass variant="projectsOrb" className="projects">
-            <OrbitingElement
-              className="orbitingElement"
-              variant="subMenuItem"
-            />
-          </FrostedGlass>
+          <FrostedGlass variant="projectsOrb" className="projects" />
         </AnimatedLink>
       </MenuItemContainer>{' '}
       <MenuItemContainer variant="subMenuItem" style={contactAnimation}>
@@ -85,12 +72,7 @@ const NavigationBar: React.FC = (): JSX.Element => {
           onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
           <MenuItemText>Contact</MenuItemText>
-          <FrostedGlass variant="contactOrb">
-            <OrbitingElement
-              className="orbitingElement"
-              variant="subMenuItem"
-            />
-          </FrostedGlass>
+          <FrostedGlass variant="contactOrb" />
         </AnimatedLink>
       </MenuItemContainer>
     </NavBar>
