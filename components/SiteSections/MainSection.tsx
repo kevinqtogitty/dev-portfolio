@@ -48,7 +48,11 @@ const MainSection: React.FC = (): JSX.Element => {
             <Image src="/email.svg" height={45} width={45} alt="email" />
           </ResizableEmail>
         </a>
-        <a href="/documents/KevinToCV.pdf" download>
+        <a
+          href="/documents/KevinToCV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ResizableEmail>
             <Image src="/cv.png" height={45} width={45} alt="CV" />
           </ResizableEmail>
@@ -67,7 +71,7 @@ const MainSection: React.FC = (): JSX.Element => {
             src="/corner-down-right.svg"
             alt="arrow"
           />
-          <Me>Fullstack Engineer</Me>
+          <Me>Frontend Developer</Me>
         </Resized>
       </SvgTitleContainer>
     </SiteSection>
