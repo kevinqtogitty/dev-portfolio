@@ -67,8 +67,8 @@ const AboutSection: React.FC = (): JSX.Element => {
         Hey! My name is Kevin To and I&apos;m a frontend developer based in the
         the US. I work mostly with ReactJS & Typescript client side, and
         React-Spring for those physics based animations. On occassion I&apos;ll
-        need a bit more functionality so MongoDB and Express help me get the job
-        done.
+        need a bit more functionality so Firebase or MongoDB/Express help me get
+        the job done.
         <br />
         <br />
         With prior experience as a specialty coffee/cafe consultant and
