@@ -17,6 +17,8 @@ import {
   Vite,
   Redux,
   Linkedin,
+  Express,
+  Mongodb,
 } from '@styled-icons/simple-icons';
 
 const { styled } = createStitches({
@@ -33,8 +35,23 @@ const FirebaseStyled = styled(Firebase, {
     height: '2rem',
   },
 });
+const MongoDBStyled = styled(Mongodb, {
+  color: 'rgb(3, 2, 1)',
+  height: '3rem',
+  '@bp1': {
+    height: '2rem',
+  },
+});
 
 const HtmlStyled = styled(Html5, {
+  color: 'rgb(3, 2, 1)',
+  height: '3rem',
+  '@bp1': {
+    height: '2rem',
+  },
+});
+
+const ExpressStyled = styled(Express, {
   color: 'rgb(3, 2, 1)',
   height: '3rem',
   '@bp1': {
@@ -226,4 +243,6 @@ export {
   ProjectInteractionWrapper,
   LinkedinStyled,
   Overlay,
+  ExpressStyled,
+  MongoDBStyled,
 };
