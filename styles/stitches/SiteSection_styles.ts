@@ -83,7 +83,7 @@ const SiteSection = styled('section', {
         },
 
         '@bp2': {
-          height: '95vh',
+          height: '110vh',
           width: '100vw',
           paddingLeft: '.5rem',
           paddingTop: '0rem',
