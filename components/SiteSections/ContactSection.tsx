@@ -113,7 +113,7 @@ const ContactSection: React.FC = (): JSX.Element => {
         <input type="hidden" name="_template" value="basic" />
       </StyledForm>
       <StyledConnectWithMeWrapper>
-        <h2>Lets connect</h2>
+        <h2>Let&apos;s connect</h2>
         <StyledFindMeHere>
           <a href={fullLinkedInLink} target="_blank" rel="noopener noreferrer">
             <LinkedinStyled
