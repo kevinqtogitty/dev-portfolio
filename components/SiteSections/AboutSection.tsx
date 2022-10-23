@@ -8,7 +8,6 @@ import { AnimatedDiv } from '../../styles/stitches/reusable_styles';
 import { SiteSection } from '../../styles/stitches/SiteSection_styles';
 import { useSpring, config, useTrail } from 'react-spring';
 import {
-  AstroStyled,
   CssStyled,
   DevIconWrapper,
   FirebaseStyled,
@@ -24,6 +23,8 @@ import {
   TypescriptStyled,
   VercelStyled,
   ViteStyled,
+  ExpressStyled,
+  MongoDBStyled,
 } from '../../styles/stitches/developerIcon_styles';
 
 const AboutSection: React.FC = (): JSX.Element => {
@@ -38,17 +39,13 @@ const AboutSection: React.FC = (): JSX.Element => {
     [<TypescriptStyled />, 'TypeScript'],
     [<ReactStyled />, 'React'],
     [<NodeJsStyled />, 'NodeJS'],
+    [<ExpressStyled />, 'Express'],
+    [<MongoDBStyled />, 'MongoDB'],
     [<GitStyled />, 'Git'],
-    [<AstroStyled />, 'Astro'],
     [<FirebaseStyled />, 'Firebase'],
     [<ViteStyled />, 'Vite'],
     [<VercelStyled />, 'Vercel'],
     [<StyledComponentsStyled />, 'Styled Components'],
-  ];
-
-  const learning = [
-    [<ReduxStyled />, 'Redux Toolkit'],
-    [<NextJsStyled />, 'NextJS'],
   ];
 
   const aboutCardAnimation = useSpring({
@@ -62,24 +59,22 @@ const AboutSection: React.FC = (): JSX.Element => {
     transform: inView ? 'translateY(0%)' : 'translateY(-20%)',
     config: config.wobbly,
   });
-  const trailAnimation2 = useTrail(learning.length, {
-    opacity: inView ? 1 : 0,
-    transform: inView ? 'translateY(0%)' : 'translateY(-20%)',
-    config: config.wobbly,
-  });
 
   return (
     <SiteSection id="Page2" variant="AboutSection">
       <Card variant="AboutMe" style={aboutCardAnimation}>
         <StyledHeader> A bit about me</StyledHeader>
-        My journey in programming was kickstarted after recieving a fat bill
-        from one of those big website builder/hosting platforms. After teaching
-        myself and building my personal photography website I was hooked
+        Hey! My name is Kevin To and I&apos;m a frontend developer based in the
+        the US. I work mostly with ReactJS & Typescript client side, and
+        React-Spring for those physics based animations. On occassion I&apos;ll
+        need a bit more functionality so MongoDB and Express help me get the job
+        done.
         <br />
         <br />
-        I&apos;m a frontend focused engineer, who&apos;s familiarizing himself
-        with more backend services, so I can deliver richer experiences for my
-        end users
+        With prior experience as a specialty coffee/cafe consultant and
+        currently as a English as a foreign language teacher, I bring both
+        technical know-how and team skills like leadership, open communication,
+        and conflict resolution to the table.
       </Card>
       <AnimatedDiv variant="devContainer" ref={ref}>
         <IconHeader>My Toolkit</IconHeader>
@@ -87,14 +82,6 @@ const AboutSection: React.FC = (): JSX.Element => {
           {trailAnimation.map((animation, index: any) => (
             <DevIconWrapper style={animation} key={index}>
               {icons[index].map((item) => item)}
-            </DevIconWrapper>
-          ))}
-        </AnimatedDiv>
-        <IconHeader>I&apos;m learning</IconHeader>
-        <AnimatedDiv variant="devIcons">
-          {trailAnimation2.map((animation, index) => (
-            <DevIconWrapper style={animation} key={index}>
-              {learning[index].map((item) => item)}
             </DevIconWrapper>
           ))}
         </AnimatedDiv>
