@@ -68,10 +68,10 @@ const AboutSection: React.FC = (): JSX.Element => {
         the job done.
         <br />
         <br />
-        With prior experience as a specialty coffee/cafe consultant and
+        {/* With prior experience as a specialty coffee/cafe consultant and
         currently as a English as a foreign language teacher, I bring both
         technical know-how and team skills like leadership, open communication,
-        and conflict resolution to the table.
+        and conflict resolution to the table. */}
       </Card>
       <AnimatedDiv variant="devContainer" ref={ref}>
         <IconHeader>My Toolkit</IconHeader>
