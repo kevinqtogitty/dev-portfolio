@@ -82,13 +82,9 @@ const ReelTalk: React.FC = (): JSX.Element => {
           <br />
           <StyledUL>
             <StyledLI> Built with AstroJS framework</StyledLI>
-            <StyledLI>
-              {' '}
-              Uses Astros&apos; island architecture and server side rendering
-              philosophy
-            </StyledLI>
             <StyledLI> Leverages SSR for speed</StyledLI>
             <StyledLI> Fully responsive</StyledLI>
+            <StyledLI> Blazingly fast!</StyledLI>
           </StyledUL>
           <ProjectInteractionWrapper>
             <AnimatedAnchor
