@@ -79,19 +79,17 @@ const WhatsPlaying: React.FC = (): JSX.Element => {
       <FrostedGlass variant="Cards" ref={ref} style={Card2Animation}>
         What&apos;s Out In my Country?
         <ProjectDescription>
-          A fullstack application which queries the TMDB database for currently
-          and upcoming films depending on the country you select. Allows a user
-          to create an account, login, and save/delete movies to & from their
-          watchlist which is stored in a database
+          A fullstack serverless application which queries the TMDB database for
+          currently and upcoming films depending on the country you select.
+          Allows a user to create an account, login, and save/delete movies to &
+          from their watchlist which is stored in a database
           <br />
           <br />
           <StyledUL>
             <StyledLI>
-              {' '}
               Implemented user authentication/storage via Firebase
             </StyledLI>
             <StyledLI>
-              {' '}
               User can save/remove movies to a persistent watchlist
             </StyledLI>
             <StyledLI> Uses session storage for country chosen</StyledLI>
