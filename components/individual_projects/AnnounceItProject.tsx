@@ -29,13 +29,11 @@ const AnnounceItProject = () => {
     'React',
     'Zustand',
     'NodeJS',
-    'Express',
+    'ExpressJS',
     'TipTap',
     'Firebase Auth',
     'MongoDB',
     'Radix-UI',
-    'Styled Components',
-    'React-Router',
   ];
 
   const { ref, inView } = useInView({
@@ -81,8 +79,8 @@ const AnnounceItProject = () => {
       <FrostedGlass variant="Cards" ref={ref} style={CardAnimation}>
         Announce It!
         <ProjectDescription>
-          A fullstack responsive webapp to create Teams and add members via a
-          randomly generated code. Allows a user to join other teams, see their
+          A fullstack webapp to create Teams and add members via a randomly
+          generated code. Allows a user to join other teams, see their
           announcements, and post their own announcements via TipTap rich text
           editor. Made to make team managment and organization simpler.
           <br />
@@ -90,12 +88,12 @@ const AnnounceItProject = () => {
           <StyledUL>
             <StyledLI> MERN stack application</StyledLI>
             <StyledLI>
-              Uses TipTap editor to generate/convert html to json
+              Uses TipTap editor to generate/convert html & JSON
             </StyledLI>
-            <StyledLI> Allows for CRUD operations via a RestAPI</StyledLI>
+            <StyledLI> CRUD operations via Express RestAPI</StyledLI>
             <StyledLI> Data is saved to MongoDB</StyledLI>
             <StyledLI> Uses Radix primitves to handle accesibility</StyledLI>
-            <StyledLI> Uses private routes</StyledLI>
+            <StyledLI> Uses Zustand for state management</StyledLI>
           </StyledUL>
           <ProjectInteractionWrapper>
             <AnimatedAnchor
