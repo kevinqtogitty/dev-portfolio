@@ -10,7 +10,8 @@ const { styled } = createStitches({
 });
 
 const SiteSection = styled('section', {
-  backgroundColor: 'rgb(235, 227, 216)',
+  backgroundColor: 'rgb(3, 2, 1)',
+
   height: '100vh',
   display: 'flex',
   justifyContent: 'center',
@@ -26,6 +27,8 @@ const SiteSection = styled('section', {
         maxHeight: '800px',
         width: '100%',
         position: 'relative',
+        color: 'rgb(255, 255, 255)',
+
         '@bp1': {
           height: '100vh',
         },
@@ -34,21 +37,32 @@ const SiteSection = styled('section', {
         },
       },
       ProjectSection: {
-        height: 'fit-content',
-        backgroundSize: '100rem',
+        position: 'relative',
+        height: '100vh',
         flexDirection: 'column',
         width: '110vw',
+        color: 'rgb(255, 255, 255)',
+
         '@bp1': {
           width: '100%',
+          height: 'fit-content',
+          paddingTop: '5rem',
+          alignItems: 'center',
+          justifyContent: 'center',
         },
       },
       AboutSection: {
-        backgroundImage: 'url("/terrain.svg")',
         backgroundSize: '100rem',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        maxHeight: '1000px',
-        width: '100%',
+        position: 'relative',
+        backgroundColor: 'white',
+        backgroundImage: 'url(/terrain.svg)',
+        filter: 'invert(100%)',
+        '&::before': {
+          content: `' '`,
+          position: 'absolute',
+        },
 
         '@bp1': {
           flexDirection: 'column',
@@ -69,6 +83,7 @@ const SiteSection = styled('section', {
         columnGap: '1rem',
         backgroundImage: 'url("/wave.jpg")',
         maxHeight: '700px',
+        color: 'rgb(255, 255, 255)',
 
         '@bp1': {
           height: '60vh',
@@ -91,7 +106,9 @@ const SiteSection = styled('section', {
 });
 
 const ProjectSection = styled('section', {
+  filter: 'invert(100%)',
   backgroundImage: 'url("/beam.svg")',
+  backgroundColor: 'white',
   backgroundSize: '50rem',
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'right',
