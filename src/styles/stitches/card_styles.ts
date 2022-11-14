@@ -18,7 +18,7 @@ const Card = styled(animated('div'), {
         position: 'absolute',
         left: '5rem',
         padding: '3rem',
-        fontFamily: 'Gruppo',
+        // fontFamily: 'Gruppo',
         fontSize: '1.3rem',
         borderRadius: '10px',
         color: 'white',

@@ -143,6 +143,7 @@ const GithubStyled = styled(animated(Github), {
   color: 'rgb(3, 2, 1)',
   height: '3rem',
   cursor: 'pointer',
+  filter: 'invert(100%)',
   '@bp1': {
     height: '2rem',
   },
@@ -165,6 +166,8 @@ const ReduxStyled = styled(Redux, {
 });
 
 const IconHeader = styled('h2', {
+  fontFamily: 'syncopate',
+
   '@bp1': {
     fontSize: '1em',
   },
@@ -174,8 +177,9 @@ const LinkedinStyled = styled(animated(Linkedin), {
   color: 'rgb(3, 2, 1)',
   height: '3rem',
   cursor: 'pointer',
+  filter: 'invert(100%)',
   '@bp1': {
-    height: '2rem',
+    height: '1.9rem',
   },
 });
 
@@ -186,6 +190,7 @@ const DevIconWrapper = styled(animated('div'), {
   flexDirection: 'column',
   rowGap: '1rem',
   alignItems: 'center',
+  fontFamily: 'syncopate',
 });
 
 const ProjectInteractionWrapper = styled('div', {

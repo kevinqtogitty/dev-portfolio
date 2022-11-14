@@ -15,10 +15,8 @@ import {
   HtmlStyled,
   IconHeader,
   JavascriptStyled,
-  NextJsStyled,
   NodeJsStyled,
   ReactStyled,
-  ReduxStyled,
   StyledComponentsStyled,
   TypescriptStyled,
   VercelStyled,
@@ -93,5 +91,6 @@ const AboutSection: React.FC = (): JSX.Element => {
 export default AboutSection;
 
 const StyledHeader = styled('h2', {
-  fontSize: '1rem',
+  fontFamily: 'syncopate',
+  fontSize: '2rem',
 });

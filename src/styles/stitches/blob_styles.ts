@@ -25,12 +25,12 @@ const Blob = styled(animated('div'), {
   left: '15rem',
   width: '20rem',
   height: '20rem',
-  background: 'rgb(3, 2, 1)',
+  background: 'rgb(255, 255, 255)',
   transition: 'ease-in',
   animation: `${rotateAndMorph} 13s infinite alternate ease-in-out`,
 
   '@bp1': {
-    background: 'rgb(3, 2, 1)',
+    // background: 'rgb(3, 2, 1)',
     width: '30rem',
     height: '30rem',
     left: '8rem',

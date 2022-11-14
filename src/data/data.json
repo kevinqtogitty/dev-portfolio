@@ -1,0 +1,143 @@
+[
+  {
+    "projectName": "Aol Instant Messenger",
+    "thumbnail": "/project_photos/aolMessenger.jpg",
+    "gif": "/gifs/aol-messenger.gif",
+    "info": {
+      "card_description": "Real-time chat app in the style of AIM and Windows XP using websockets",
+      "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a ScreenName and private room, other users can join that room given the code and chat with each other. Yes, it even contains those familiar AIM notification sounds!",
+      "bulletPoints": [
+        "Uses websockets to send and receive messages via react hooks",
+        "Contains notifcation sounds for new messages & users leaving/entering the chatroom",
+        "Uses xp.css for the styling"
+      ]
+    },
+    "technologies": [
+      "Vite",
+      "React",
+      "Typescript",
+      "NodeJS",
+      "Express",
+      "Socket.io",
+      "Styled Components",
+      "Vercel"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/aol-chat-app",
+    "liveUrl": "https://aol-messenger-client.vercel.app/",
+    "isFullyFunctional": false
+  },
+  {
+    "projectName": "Announce It!",
+    "thumbnail": "/project_photos/announce_it.jpg",
+    "gif": "/gifs/announce-it.gif",
+    "info": {
+      "card_description": "Fullstack MERN Team announcement application",
+      "description": "A fullstack webapp to create Teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
+      "bulletPoints": [
+        "MERN stack application",
+        "TipTap rich editor to generate/convert html & JSON",
+        "CRUD operations via Express RestAPI",
+        "Data is saved to MongoDB",
+        "Uses a lightweight Redux alternative, Zustand, for state management"
+      ]
+    },
+    "technologies": [
+      "Typescript",
+      "React",
+      "Zustand",
+      "NodeJS",
+      "ExpressJS",
+      "TipTap",
+      "Firebase Auth",
+      "MongoDB",
+      "Radix-UI"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/announce-it-app2",
+    "liveUrl": "https://announce-it-app2.vercel.app/",
+    "isFullyFunctional": false
+  },
+  {
+    "projectName": "Photography Portfolio",
+    "thumbnail": "/project_photos/photography.jpg",
+    "gif": "/gifs/photo-website.gif",
+    "info": {
+      "card_description": "Photography portfolio and E-commerce store powered by Stripe",
+      "description": "A desktop/mobile friendly website to host my personal photography projects. Has a print store which uses the prebuilt checkout from the Stripe API. Store cart state migrated from Context API to Redux Toolkit.",
+      "bulletPoints": [
+        "Implemented Stripe Checkout for print purchases",
+        "Deployed on CloudFlare CDN",
+        "React-Spring menu/shopping cart animations"
+      ]
+    },
+    "technologies": [
+      "Vite",
+      "React",
+      "Typescript",
+      "Redux Toolkit",
+      "Styled Components",
+      "React-Spring",
+      "Stripe",
+      "React-Router",
+      "Vercel",
+      "CloudFlare CDN"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/rebuilt-personal-photo-website",
+    "liveUrl": "https://www.kevinqtophoto.com/",
+    "isFullyFunctional": true
+  },
+  {
+    "projectName": "Whats Playing?",
+    "thumbnail": "/project_photos/whats_playing.jpg",
+    "gif": "/gifs/whats-playing.gif",
+    "info": {
+      "card_description": "Fullstack serverless movie checking application using Firebase",
+      "description": "A fullstack serverless application which queries the TMDB database for currently and upcoming films depending on the country you select. Allows a user to create an account, login, and save/delete movies to & from their watchlist which is stored in a database",
+      "bulletPoints": [
+        "Implemented user authentication/storage via Firebase",
+        "User can save/remove movies to a persistent watchlist",
+        "Uses session storage for country chosen",
+        "Fully responsive, changes based on device screen size"
+      ]
+    },
+    "technologies": [
+      "Vite",
+      "React",
+      "Typescript",
+      "Firebase Services",
+      "NodeJS",
+      "Styled Components",
+      "Axios",
+      "Context API",
+      "Netlify"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/whats-playing-in-my-country",
+    "liveUrl": "https://whatsplayinginmycountry.netlify.app/",
+    "isFullyFunctional": true
+  },
+  {
+    "projectName": "ReelTalk Film Blog",
+    "thumbnail": "/project_photos/reeltalk.jpg",
+    "gif": "/gifs/reel-talk.gif",
+    "info": {
+      "card_description": "Lightning fast JAMStack blog using AstroJS Framework",
+      "description": "A clean and lightning fast jamstack blog to host my thoughts on cinema. Uses AstroJS to ship the least amount of code possible to increase page speed. This method also greatly improves SEO",
+      "bulletPoints": [
+        "Built with AstroJS framework",
+        "Leverages SSR for speed",
+        "Fully responsive",
+        "Blazingly fast!"
+      ]
+    },
+    "technologies": [
+      "Astro",
+      "MDX",
+      "React",
+      "Vanilla CSS",
+      "React-Router",
+      "Vercel"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/rebuilt-reel-talk-blog",
+    "liveUrl": "https://reel-talk.vercel.app/",
+    "isFullyFunctional": true
+  }
+]

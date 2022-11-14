@@ -20,7 +20,6 @@ import {
 const MainSection: React.FC = (): JSX.Element => {
   const email: string = process.env.NEXT_PUBLIC_EMAIL!;
   const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
-
   const fullEmailToLink: string = `mailto:${email}`;
   const githubFullUrl: string = `https://github.com/${github}`;
 
@@ -38,14 +37,20 @@ const MainSection: React.FC = (): JSX.Element => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedinStyled />
+          <LinkedinStyled style={{ filter: 'invert(100%)' }} />
         </a>
         <a href={githubFullUrl} target="_blank" rel="noopener noreferrer">
-          <GithubStyled />
+          <GithubStyled style={{ filter: 'invert(100%)' }} />
         </a>
         <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
           <ResizableEmail>
-            <Image src="/email.svg" height={45} width={45} alt="email" />
+            <Image
+              src="/email.svg"
+              style={{ filter: 'invert(100%)' }}
+              height={45}
+              width={45}
+              alt="email"
+            />
           </ResizableEmail>
         </a>
         <a
@@ -54,24 +59,39 @@ const MainSection: React.FC = (): JSX.Element => {
           rel="noopener noreferrer"
         >
           <ResizableEmail>
-            <Image src="/cv.png" height={45} width={45} alt="CV" />
+            <Image
+              src="/cv.png"
+              style={{ filter: 'invert(100%)' }}
+              height={45}
+              width={45}
+              alt="CV"
+            />
           </ResizableEmail>
         </a>
       </ContactMeWrapper>
       <ResizedImage>
-        <Image height={800} width={800} src="/globe.svg" alt="globe" />
+        <Image
+          height={800}
+          style={{ filter: 'invert(100%)' }}
+          width={800}
+          src="/globe.svg"
+          alt="globe"
+        />
       </ResizedImage>
-      <MainIntro>Hey! I&apos;m Kevin</MainIntro>
+      <MainIntro style={{ fontFamily: 'syncopate' }}>
+        Hey! I&apos;m Kevin
+      </MainIntro>
       <Blob style={growAnimation} />
       <SvgTitleContainer>
         <Resized>
           <Image
             height={200}
             width={200}
+            style={{ filter: 'invert(100%)' }}
             src="/corner-down-right.svg"
             alt="arrow"
           />
-          <Me>Frontend Developer</Me>
+          <Me style={{ fontFamily: 'syncopate' }}>Frontend Developer</Me>
         </Resized>
       </SvgTitleContainer>
     </SiteSection>
