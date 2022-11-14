@@ -160,8 +160,8 @@ const ProjectToolsContainer = styled(animated('div'), {
   padding: '1rem',
   display: 'flex',
   flexWrap: 'wrap',
-  columnGap: '1rem',
-  rowGap: '1rem',
+  columnGap: '.2rem',
+  rowGap: '.2rem',
 
   variants: {
     variant: {
@@ -258,6 +258,7 @@ const MenuItemContainer = styled(animated('div'), {
 });
 
 const MenuItemText = styled('div', {
+  fontFamily: 'syncopate',
   fontSize: '1rem',
   position: 'absolute',
   display: 'flex',
