@@ -44,13 +44,7 @@ const MainSection: React.FC = (): JSX.Element => {
         </a>
         <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
           <ResizableEmail>
-            <Image
-              src="/email.svg"
-              style={{ filter: 'invert(100%)' }}
-              height={45}
-              width={45}
-              alt="email"
-            />
+            <Image src="/email.svg" height={45} width={45} alt="email" />
           </ResizableEmail>
         </a>
         <a
@@ -59,13 +53,7 @@ const MainSection: React.FC = (): JSX.Element => {
           rel="noopener noreferrer"
         >
           <ResizableEmail>
-            <Image
-              src="/cv.png"
-              style={{ filter: 'invert(100%)' }}
-              height={45}
-              width={45}
-              alt="CV"
-            />
+            <Image src="/cv.png" height={45} width={45} alt="CV" />
           </ResizableEmail>
         </a>
       </ContactMeWrapper>
