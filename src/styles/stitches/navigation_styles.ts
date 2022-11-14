@@ -20,6 +20,7 @@ const NavBar = styled(NavigationMenu.Root, {
   right: '1rem',
   bottom: '1rem',
   zIndex: '10',
+  filter: 'invert(100%)',
 
   '@bp1': {
     width: '12rem',
