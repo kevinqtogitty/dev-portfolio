@@ -5,7 +5,8 @@ const StyledFooter = styled('footer', {
   display: 'flex',
   alignItem: 'center',
   justifyContent: 'center',
-  backgroundColor: 'rgb(235, 227, 216)',
+  backgroundColor: 'rgb(3, 2, 1)',
+  color: 'rgb(255, 255, 255)',
 });
 
 const StyledSpan = styled('span', {
