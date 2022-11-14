@@ -14,6 +14,7 @@ const AnimatedDiv = styled(animated('div'), {
   display: 'flex',
   flexDirection: 'column',
   rowGap: '1rem',
+
   variants: {
     variant: {
       project1and3Div: {
@@ -40,8 +41,9 @@ const AnimatedDiv = styled(animated('div'), {
         flexDirection: 'row',
         width: '30rem',
         flexWrap: 'wrap',
-        columnGap: '2rem',
+        columnGap: '.5rem',
         justifyContent: 'center',
+        rowGap: '0.5rem',
         '@bp2': {
           width: '20rem',
         },
@@ -65,7 +67,7 @@ const AnimatedDiv = styled(animated('div'), {
 });
 
 const SmallTextContainer = styled(animated('div'), {
-  padding: '1rem',
+  padding: '.6rem 1rem',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -77,41 +79,29 @@ const SmallTextContainer = styled(animated('div'), {
 
 const ProjectDescription = styled('div', {});
 
-const StyledUL = styled('ul', {});
+const StyledUL = styled('ul', {
+  width: 'fit-content',
+  padding: '.8rem 1.8rem',
+  filter: 'invert(100%)',
+  backgroundColor: 'white',
+  borderRadius: '5px',
+});
 
 const StyledLI = styled('li', {
-  fontFamily: 'Gruppo',
-
   '&::marker': {
     content: '⟢  ',
   },
 });
 
-const ResizableEmail = styled(animated('div'), {});
-
-const AnimatedAnchor = styled(animated('a'), {
-  position: 'relative',
+const ResizableEmail = styled(animated('div'), {
+  filter: 'invert(100%)',
   '@bp2': {
-    fontSize: '.9rem',
-  },
-
-  '&.notification': {
-    '&::after': {
-      position: 'absolute',
-      content:
-        '*only frontend is live, please fork repo for full functionality',
-      color: 'black',
-      width: '11rem',
-      left: '7rem',
-      top: '-1rem',
-      fontSize: '.9rem',
-    },
+    width: '2.5rem',
   },
 });
 
 export {
   AnimatedDiv,
-  AnimatedAnchor,
   SmallTextContainer,
   ProjectDescription,
   StyledUL,
