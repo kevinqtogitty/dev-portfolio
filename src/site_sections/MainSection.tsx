@@ -48,7 +48,7 @@ const MainSection: React.FC = (): JSX.Element => {
           </ResizableEmail>
         </a>
         <a
-          href="/assets/documents/KevinToCV2.pdf"
+          href="/assets/documents/KevinToResume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
