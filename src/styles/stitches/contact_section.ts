@@ -11,6 +11,7 @@ const { styled } = createStitches({
 
 const StyledLabel = styled(Label.Root, {
   borderRadius: '5px',
+  fontFamily: 'Syncopate',
 });
 
 const StyledForm = styled('form', {
@@ -39,12 +40,14 @@ const InputLabelWrapper = styled('div', {
 
 const StyledInput = styled('input', {
   border: 'none',
-  borderBottom: '2px solid black',
+  borderBottom: '2px solid #FF69B4',
   width: '20rem',
   padding: '.7rem',
   fontFamily: 'Gruppo',
   fontSize: '1.3rem',
   borderRadius: '5px',
+  backgroundColor: 'rgba(255, 255, 255, .0)',
+  color: '#fff',
   '&:focus': {
     outline: 'none',
   },
@@ -53,13 +56,15 @@ const StyledInput = styled('input', {
 const StyledTextArea = styled('textarea', {
   margin: '1rem',
   border: 'none',
-  borderBottom: '2px solid black',
+  borderBottom: '2px solid #FF69B4',
   fontFamily: 'Gruppo',
   fontSize: '1.3rem',
   padding: '1rem',
   height: '10rem',
   borderRadius: '6px',
   width: '90%',
+  backgroundColor: 'rgba(255, 255, 255, 0)',
+  color: '#fff',
   '&:focus': {
     outline: 'none',
   },
@@ -85,6 +90,7 @@ const StyledFindMeHere = styled('div', {
   display: 'flex',
   columnGap: '1rem',
   alignItems: 'center',
+  justifyContent: 'center',
   '@bp1': {
     justifyContent: 'center',
     width: '100%',
@@ -95,7 +101,9 @@ const StyledFindMeHere = styled('div', {
 const StyledConnectWithMeWrapper = styled('div', {
   display: 'flex',
   flexDirection: 'column',
-  padding: '1rem',
+  padding: '.5rem',
+  alignItems: 'center',
+  justifyContent: 'center',
 });
 
 const StyledButton = styled(animated('button'), {
@@ -109,6 +117,11 @@ const StyledButton = styled(animated('button'), {
   backgroundColor: 'rgb(3, 2, 1)',
   cursor: 'pointer',
   marginLeft: '1rem',
+  fontFamily: 'Syncopate',
+});
+
+const StyledH2 = styled('h2', {
+  fontFamily: 'Syncopate',
 });
 
 export {
@@ -121,4 +134,5 @@ export {
   StyledLabel,
   InputLabelWrapper,
   StyledButton,
+  StyledH2,
 };
