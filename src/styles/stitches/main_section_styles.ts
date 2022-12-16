@@ -10,7 +10,7 @@ const { styled } = createStitches({
 
 const ResizedImage = styled('div', {
   position: 'absolute',
-  top: '-5rem',
+  top: '4rem',
   right: '3rem',
 
   '@bp1': {
@@ -19,7 +19,8 @@ const ResizedImage = styled('div', {
   },
 
   '@bp2': {
-    display: 'none',
+    // display: 'none',
+    top: '27rem',
   },
 });
 
@@ -39,6 +40,7 @@ const Resized = styled('div', {
 });
 
 const Me = styled('div', {
+  fontFamily: 'syncopate',
   marginTop: '3rem',
   width: '15rem',
   '@bp2': {
@@ -52,7 +54,7 @@ const SvgTitleContainer = styled('div', {
   alignItems: 'center',
   position: 'absolute',
   left: '13rem',
-  top: '30rem',
+  bottom: '7rem',
   '@bp1': {
     top: '37rem',
     left: '5rem',
@@ -66,21 +68,20 @@ const SvgTitleContainer = styled('div', {
 const ContactMeWrapper = styled('div', {
   borderRadius: '6px',
   display: 'flex',
-  flexDirection: 'column',
-  rowGap: '1rem',
+  flexDirection: 'row',
+  columnGap: '1rem',
   width: 'fit-content',
   alignItems: 'center',
   justifyContent: 'space-evenly',
-  position: 'absolute',
+  marginLeft: '1rem',
   top: '0rem',
-  left: '2rem',
-  padding: '1rem',
   '& a': {
     cursor: 'pointer',
   },
 
   '@bp1': {
     left: '0rem',
+    display: 'none',
   },
 });
 
