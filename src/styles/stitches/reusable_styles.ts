@@ -42,10 +42,11 @@ const AnimatedDiv = styled(animated('div'), {
         width: '30rem',
         flexWrap: 'wrap',
         columnGap: '.5rem',
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         rowGap: '0.5rem',
         '@bp2': {
           width: '20rem',
+          justifyContent: 'center',
         },
       },
       devContainer: {
@@ -71,7 +72,7 @@ const SmallTextContainer = styled(animated('div'), {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: 'rgba(3, 2, 1, 1)',
+  backgroundColor: 'rgba(218, 112, 214, .4)',
   borderRadius: '50px',
   fontSize: '.7rem',
   color: '#fff',
@@ -82,12 +83,13 @@ const ProjectDescription = styled('div', {});
 const StyledUL = styled('ul', {
   width: 'fit-content',
   padding: '.8rem 1.8rem',
-  filter: 'invert(100%)',
-  backgroundColor: 'white',
+  backgroundColor: 'rgba(255, 255, 200, .3)',
   borderRadius: '5px',
+  border: '.5px solid #fff',
 });
 
 const StyledLI = styled('li', {
+  color: '#fff',
   '&::marker': {
     content: '⟢  ',
   },
