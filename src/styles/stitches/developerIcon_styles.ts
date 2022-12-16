@@ -140,12 +140,17 @@ const VercelStyled = styled(Vercel, {
 });
 
 const GithubStyled = styled(animated(Github), {
-  color: 'rgb(3, 2, 1)',
-  height: '3rem',
+  color: '#fff',
+  height: '2rem',
   cursor: 'pointer',
-  filter: 'invert(100%)',
+  transition: 'color 300ms ease-in-out',
+
   '@bp1': {
     height: '2rem',
+  },
+
+  '&:hover': {
+    color: 'hotpink',
   },
 });
 
@@ -174,12 +179,17 @@ const IconHeader = styled('h2', {
 });
 
 const LinkedinStyled = styled(animated(Linkedin), {
-  color: 'rgb(3, 2, 1)',
-  height: '3rem',
+  color: '#fff',
+  height: '2rem',
   cursor: 'pointer',
-  filter: 'invert(100%)',
+  transition: 'color 300ms ease-in-out',
+
   '@bp1': {
     height: '1.9rem',
+  },
+
+  '&:hover': {
+    color: 'hotpink',
   },
 });
 
@@ -198,7 +208,6 @@ const ProjectInteractionWrapper = styled('div', {
   columnGap: '1rem',
   alignItems: 'center',
   borderRadius: '6px',
-
   fontSize: '1.2rem',
   justifyContent: 'center',
   padding: '.5rem',
