@@ -1,82 +1,136 @@
-import React, { useState } from 'react';
-import { AnimatedLink, NavBar } from '../styles/stitches/navigation_styles';
-import { useSpring } from 'react-spring';
+import React from 'react';
+import { AnimatedLink, MenuLink } from '../styles/stitches/navigation_styles';
+import { createStitches } from '@stitches/react';
 import {
-  MenuItemContainer,
-  MenuItemText,
-  FrostedGlass,
-} from '../styles/stitches/frostedGlass_styles';
+  LinkedinStyled,
+  GithubStyled,
+} from '../styles/stitches/developerIcon_styles';
+import { ContactMeWrapper } from '../styles/stitches/main_section_styles';
+import Image from 'next/image';
 
 const NavigationBar: React.FC = (): JSX.Element => {
-  const [menuIsClicked, setMenuIsClicked] = useState<boolean>(true);
-
-  const projectsAnimation = useSpring({
-    opacity: menuIsClicked ? 1 : 1,
-    transform: menuIsClicked ? `translate(20%, -150%)` : 'translate(0%, 0%)',
-  });
-
-  const aboutAnimation = useSpring({
-    opacity: menuIsClicked ? 1 : 1,
-    transform: menuIsClicked ? `translate(-110%, -100%)` : 'translate(0%, 0%)',
-    delay: menuIsClicked ? 100 : 0,
-  });
-
-  const contactAnimation = useSpring({
-    opacity: menuIsClicked ? 1 : 1,
-    transform: menuIsClicked ? `translate(-150%, 30%)` : 'translate(0%, 0%)',
-    delay: menuIsClicked ? 200 : 0,
-  });
+  const email: string = process.env.NEXT_PUBLIC_EMAIL!;
+  const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
+  const fullEmailToLink: string = `mailto:${email}`;
+  const githubFullUrl: string = `https://github.com/${github}`;
 
   return (
     <NavBar>
-      <MenuItemContainer
-        variant="main"
-        onClick={() => setMenuIsClicked(!menuIsClicked)}
-      >
-        <MenuItemText>Menu</MenuItemText>
-        <FrostedGlass variant="menuOrb" />
-      </MenuItemContainer>
-      <MenuItemContainer variant="subMenuItem" style={projectsAnimation}>
+      <ContactMeWrapper>
+        <a
+          href="https://www.linkedin.com/in/kevinqto"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedinStyled />
+        </a>
+        <a href={githubFullUrl} target="_blank" rel="noopener noreferrer">
+          <GithubStyled />
+        </a>
+        <a
+          href={fullEmailToLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <MenuLink>Email</MenuLink>
+        </a>
+        <a
+          href="/assets/documents/KevinToResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <MenuLink>Resume</MenuLink>
+        </a>
+      </ContactMeWrapper>
+      <MenuLinksWrapper>
+        <AnimatedLink
+          to="Page1"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          Home
+        </AnimatedLink>
         <AnimatedLink
           to="Page2"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
-          onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
-          <MenuItemText>About</MenuItemText>
-          <FrostedGlass variant="aboutOrb" />
+          About
         </AnimatedLink>
-      </MenuItemContainer>{' '}
-      <MenuItemContainer variant="subMenuItem" style={aboutAnimation}>
         <AnimatedLink
           to="Page3"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
-          onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
-          <MenuItemText>Projects</MenuItemText>
-          <FrostedGlass variant="projectsOrb" className="projects" />
+          Projects
         </AnimatedLink>
-      </MenuItemContainer>{' '}
-      <MenuItemContainer variant="subMenuItem" style={contactAnimation}>
         <AnimatedLink
           to="Page4"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
-          onClick={() => setMenuIsClicked(!menuIsClicked)}
         >
-          <MenuItemText>Contact</MenuItemText>
-          <FrostedGlass variant="contactOrb" />
+          Contact
         </AnimatedLink>
-      </MenuItemContainer>
+      </MenuLinksWrapper>
     </NavBar>
   );
 };
 
 export default NavigationBar;
+
+export const { styled, css } = createStitches({
+  media: {
+    bp1: '(max-width: 810px)',
+    bp2: '(max-width: 428px)',
+  },
+});
+
+const NavBar = styled('nav', {
+  position: 'fixed',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  width: '100%',
+  height: '2rem',
+  top: '0rem',
+  right: '0rem',
+  zIndex: 3,
+  backdropFilter: 'blur(2px)',
+  columnGap: '2rem',
+  backgroundColor: 'rgba(3, 2, 1, .8)',
+  borderBottom: '.5px solid grey',
+  paddingTop: '1rem',
+  paddingBottom: '1rem',
+  '@bp1': {
+    justifyContent: 'center',
+  },
+});
+
+const MenuLinksWrapper = styled('div', {
+  display: 'flex',
+  columnGap: '1rem',
+  alignItems: 'center',
+  marginRight: '1rem',
+  '@bp1': {
+    marginRight: '0rem',
+  },
+});
+
+const ImageStyled = styled(Image, {
+  filter: 'invert(100%)',
+  transition: '300ms ease-in-out',
+
+  '&:hover': {
+    fill: 'hotpink',
+  },
+});
