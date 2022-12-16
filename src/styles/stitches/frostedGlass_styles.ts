@@ -52,14 +52,13 @@ const FrostedGlass = styled(animated('div'), {
         },
       },
       aboutOrb: {
-        borderRadius: '50%',
+        // borderRadius: '50%',
         left: '0rem',
         padding: '2rem',
         backgroundColor: 'rgba(3, 2, 1, 1)',
         position: 'relative',
-        height: '4rem',
-        width: '4rem',
-        animation: `${InfiniteRotate} 5s linear infinite`,
+        // height: '4rem',
+        width: 'fit-content',
         '@bp1': {
           width: '3rem',
           height: '3rem',
@@ -78,7 +77,6 @@ const FrostedGlass = styled(animated('div'), {
         height: '4rem',
         width: '4rem',
         position: 'relative',
-        animation: `${InfiniteRotate} 5s linear infinite`,
         '@bp1': {
           width: '3rem',
           height: '3rem',
@@ -97,7 +95,6 @@ const FrostedGlass = styled(animated('div'), {
         height: '4rem',
         width: '4rem',
         position: 'relative',
-        animation: `${InfiniteRotate} 5s linear infinite`,
         '@bp1': {
           width: '3rem',
           height: '3rem',
@@ -201,6 +198,7 @@ const GlassProjectContainer = styled(animated('div'), {
 });
 
 const MainIntro = styled('div', {
+  fontFamily: 'syncopate',
   height: 'fit-content',
   width: 'max-content',
   zIndex: '1',
@@ -213,7 +211,7 @@ const MainIntro = styled('div', {
   lineHeight: '4rem',
   mixBlendMode: 'difference',
   filter: 'invert(1)',
-  top: '13rem',
+  top: '15rem',
 
   '@bp1': {
     left: '8rem',
