@@ -1,5 +1,4 @@
 import { createStitches } from '@stitches/react';
-import { animated } from 'react-spring';
 
 const { styled } = createStitches({
   media: {
@@ -19,7 +18,6 @@ const ResizedImage = styled('div', {
   },
 
   '@bp2': {
-    // display: 'none',
     top: '27rem',
   },
 });
