@@ -1,5 +1,30 @@
 [
   {
+    "projectName": "Random Cocktail Generator",
+    "thumbnail": "/project_photos/reeltalk.jpg",
+    "gif": "/gifs/random-cocktail.gif",
+    "info": {
+      "card_description": "A funky minimalist cocktail generator using CocktailDB",
+      "description": "Playfully designed, inspired by pastel 70's vibe using CocktailDB. It randomly retrieves a random cocktail recipe. Made for bartenders who need to brainstorm ideas for drink specials, and party people!",
+      "bulletPoints": [
+        "Optimized for accessability by implementing micro-interactions with keyboard events",
+        "Implemented a hidden history menu to maximize screen real-estate",
+        "Implemented physics based animations using React-Spring"
+      ]
+    },
+    "technologies": [
+      "Vite",
+      "React",
+      "Typscript",
+      "Axios",
+      "Vanilla CSS",
+      "Vercel"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/random-cocktail-generator",
+    "liveUrl": "https://random-cocktail-generator-self.vercel.app/",
+    "isFullyFunctional": true
+  },
+  {
     "projectName": "Aol Instant Messenger",
     "thumbnail": "/project_photos/aolMessenger.jpg",
     "gif": "/gifs/aol-messenger.gif",
@@ -24,36 +49,6 @@
     ],
     "githubUrl": "https://github.com/kevinqtogitty/aol-chat-app",
     "liveUrl": "https://aol-messenger-client.vercel.app/",
-    "isFullyFunctional": false
-  },
-  {
-    "projectName": "Announce It!",
-    "thumbnail": "/project_photos/announce_it.jpg",
-    "gif": "/gifs/announce-it.gif",
-    "info": {
-      "card_description": "Fullstack MERN Team announcement application",
-      "description": "A fullstack webapp to create Teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
-      "bulletPoints": [
-        "MERN stack application",
-        "TipTap rich editor to generate/convert html & JSON",
-        "CRUD operations via Express RestAPI",
-        "Data is saved to MongoDB",
-        "Uses a lightweight Redux alternative, Zustand, for state management"
-      ]
-    },
-    "technologies": [
-      "Typescript",
-      "React",
-      "Zustand",
-      "NodeJS",
-      "ExpressJS",
-      "TipTap",
-      "Firebase Auth",
-      "MongoDB",
-      "Radix-UI"
-    ],
-    "githubUrl": "https://github.com/kevinqtogitty/announce-it-app2",
-    "liveUrl": "https://announce-it-app2.vercel.app/",
     "isFullyFunctional": false
   },
   {
@@ -84,6 +79,36 @@
     "githubUrl": "https://github.com/kevinqtogitty/rebuilt-personal-photo-website",
     "liveUrl": "https://www.kevinqtophoto.com/",
     "isFullyFunctional": true
+  },
+  {
+    "projectName": "Announce It!",
+    "thumbnail": "/project_photos/announce_it.jpg",
+    "gif": "/gifs/announce-it.gif",
+    "info": {
+      "card_description": "Fullstack MERN Team announcement application",
+      "description": "A fullstack webapp to create Teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
+      "bulletPoints": [
+        "MERN stack application",
+        "TipTap rich editor to generate/convert html & JSON",
+        "CRUD operations via Express RestAPI",
+        "Data is saved to MongoDB",
+        "Uses a lightweight Redux alternative, Zustand, for state management"
+      ]
+    },
+    "technologies": [
+      "Typescript",
+      "React",
+      "Zustand",
+      "NodeJS",
+      "ExpressJS",
+      "TipTap",
+      "Firebase Auth",
+      "MongoDB",
+      "Radix-UI"
+    ],
+    "githubUrl": "https://github.com/kevinqtogitty/announce-it-app2",
+    "liveUrl": "https://announce-it-app2.vercel.app/",
+    "isFullyFunctional": false
   },
   {
     "projectName": "Whats Playing?",
