@@ -2,7 +2,7 @@ import { createStitches } from '@stitches/react';
 import Image from 'next/image';
 import { animated } from 'react-spring';
 
-const { styled } = createStitches({
+export const { styled } = createStitches({
   media: {
     bp1: '(max-width: 820px)',
     bp2: '(max-width: 428px)',
@@ -11,21 +11,18 @@ const { styled } = createStitches({
 
 const SiteSection = styled('section', {
   backgroundColor: 'rgb(3, 2, 1)',
-
   height: '100vh',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  maxWidth: '1500px',
-
+  width: '1440px',
+  maxWidth: '1440px',
   variants: {
     variant: {
       TitleSection: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        maxHeight: '800px',
-        width: '100%',
         position: 'relative',
         color: 'rgb(255, 255, 255)',
 
@@ -40,7 +37,6 @@ const SiteSection = styled('section', {
         position: 'relative',
         height: '100vh',
         flexDirection: 'column',
-        width: '110vw',
         color: 'rgb(255, 255, 255)',
 
         '@bp1': {
@@ -76,14 +72,17 @@ const SiteSection = styled('section', {
         },
       },
       ContactSection: {
-        height: '55vh',
-        justifyContent: 'flex-start',
-        alignItems: 'flex-start',
+        height: 'fit-content',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
         padding: '1rem',
         columnGap: '1rem',
         backgroundImage: 'url("/wave.jpg")',
         maxHeight: '700px',
         color: 'rgb(255, 255, 255)',
+        width: '100%',
 
         '@bp1': {
           height: '60vh',
