@@ -93,4 +93,6 @@ export default AboutSection;
 const StyledHeader = styled('h2', {
   fontFamily: 'syncopate',
   fontSize: '2rem',
+  margin: '0rem',
+  marginBottom: '1rem',
 });
