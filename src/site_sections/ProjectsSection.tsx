@@ -57,7 +57,7 @@ const ProjectsSection: React.FC = (): JSX.Element => {
     liveUrl: '',
     isFullyFunctional: false,
   });
-
+  // console.log(loading);
   useEffect(() => {
     if (inView && !projectsDisplayed) {
       setLoading(true);
@@ -116,10 +116,6 @@ const ProjectsSection: React.FC = (): JSX.Element => {
     setIsDialogActive((state) => !state);
     setActiveProject(project);
   };
-
-  useEffect(() => {
-    console.log(activeProject);
-  }, [activeProject]);
 
   return (
     <SiteSection id="Page3" variant="ProjectSection">
@@ -285,13 +281,13 @@ const AnchorWrapper = styled('div', {
 
 const Anchor = styled('a', {
   textDecoration: 'none',
-  color: 'black',
+  color: '#fff',
   '&.notification': {
     '&::after': {
       position: 'absolute',
       content:
         '*only frontend is live, please fork repo for full functionality',
-      color: 'black',
+      color: '#fff',
       width: '10rem',
       bottom: '1rem',
       fontSize: '.6rem',
@@ -306,6 +302,7 @@ const LoadingPercentage = styled(animated.span, {
   justifySelf: 'center',
   fontSize: '5rem',
   fontFamily: 'syncopate',
+  border: '2px solid red',
 });
 
 const Card = styled(animated.div, {
@@ -375,10 +372,11 @@ const Modal = styled(animated.div, {
   zIndex: 3,
   width: '65rem',
   borderRadius: '4px',
-  backgroundColor: 'white',
+  border: '.5px solid grey',
+  backgroundColor: 'rgba(3, 2, 1, .7)',
   display: 'flex',
   flexDirection: 'column',
-  color: 'black',
+  color: '#fff',
   padding: '1rem',
   '@bp2': {
     top: '3rem',
@@ -401,9 +399,9 @@ const ModalContentRight = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   width: '30rem',
-  justifyContent: 'space-evenly',
+  justifyContent: 'flex-start',
   alignItems: 'center',
-
+  rowGap: '5rem',
   '@bp2': {
     width: '90%',
     overflow: 'scroll',
@@ -421,8 +419,4 @@ const Border = styled('span', {
 const CardDescription = styled('p', {
   fontSize: '.8rem',
   paddingLeft: '.3rem',
-});
-
-const StyledImage = styled(Image, {
-  alignSelf: 'center',
 });
