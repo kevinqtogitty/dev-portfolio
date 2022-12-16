@@ -17,12 +17,13 @@ const Card = styled(animated('div'), {
         height: 'fit-content',
         position: 'absolute',
         left: '5rem',
-        padding: '3rem',
-        // fontFamily: 'Gruppo',
+        padding: '2rem',
         fontSize: '1.3rem',
         borderRadius: '10px',
-        color: 'white',
-        backgroundColor: 'black',
+        color: 'black',
+        backgroundColor: 'rgba(255, 255, 255, .7)',
+        backdropFilter: 'blur(3px)',
+        border: '.5px solid grey',
 
         '@bp1': {
           position: 'static',
