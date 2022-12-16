@@ -21,7 +21,7 @@ const rotateAndMorph = keyframes({
 
 const Blob = styled(animated('div'), {
   position: 'absolute',
-  top: '5rem',
+  top: '7rem',
   left: '15rem',
   width: '20rem',
   height: '20rem',
@@ -43,24 +43,4 @@ const Blob = styled(animated('div'), {
   },
 });
 
-const OrbitingElement = styled('div', {
-  width: '1rem',
-  height: '1rem',
-  borderRadius: '50%',
-  backgroundColor: 'rgb(3, 2, 1)',
-  position: 'realtive',
-  marginBottom: 'calc(155% - .5rem)',
-  visibility: 'hidden',
-  opacity: '0',
-  transition: 'opacity 400ms ease-in-out, visibility 400ms ease-in-out ',
-
-  variants: {
-    variant: {
-      subMenuItem: {
-        marginBottom: 'calc(190% - .5rem)',
-      },
-    },
-  },
-});
-
-export { Blob, OrbitingElement };
+export { Blob };
