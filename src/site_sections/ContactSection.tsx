@@ -14,21 +14,18 @@ import {
   StyledConnectWithMeWrapper,
   StyledFindMeHere,
   StyledButton,
+  StyledH2,
 } from '../styles/stitches/contact_section';
-import Image from 'next/image';
 import { useSpring } from 'react-spring';
-import { ResizableEmail } from '../styles/stitches/reusable_styles';
 
 const ContactSection: React.FC = (): JSX.Element => {
   const [isActive, setIsActive] = useState<boolean>(false);
   const [isGitActive, setIsGitActive] = useState<boolean>(false);
   const [isLinkedActive, setIsLinkedActive] = useState<boolean>(false);
-  const [isEmailActive, setIsEmailActive] = useState<boolean>(false);
 
   const email: string = process.env.NEXT_PUBLIC_EMAIL!;
   const github: string = process.env.NEXT_PUBLIC_GITHUB_USERNAME!;
 
-  const fullEmailToLink: string = `mailto:${email}`;
   const githubFullUrl: string = `https://github.com/${github}`;
   const formsubmitLink: string = `https://formsubmit.co/${email}`;
   const fullLinkedInLink: string = `https://www.linkedin.com/in/kevinqto/`;
@@ -43,9 +40,6 @@ const ContactSection: React.FC = (): JSX.Element => {
   const LinkedinAnimation = useSpring({
     transform: isLinkedActive ? 'translateY(-5px)' : 'translateY(0px)',
   });
-  const EmailAnimation = useSpring({
-    transform: isEmailActive ? 'translateY(-5px)' : 'translateY(0px)',
-  });
 
   const handleAnimation: Function = (key: number): void => {
     switch (key) {
@@ -58,9 +52,6 @@ const ContactSection: React.FC = (): JSX.Element => {
       case 3:
         setIsLinkedActive((state) => !state);
         break;
-      case 4:
-        setIsEmailActive((state) => !state);
-        break;
       default:
         break;
     }
@@ -68,11 +59,9 @@ const ContactSection: React.FC = (): JSX.Element => {
 
   return (
     <SiteSection id="Page4" variant="ContactSection">
+      <StyledH2>Say hello!</StyledH2>
       <StyledForm action={formsubmitLink} method="POST">
         <StyledFieldset>
-          <legend>
-            <h2>Say hello!</h2>
-          </legend>
           <InputLabelWrapper>
             <StyledLabel htmlFor="fullName">Name: </StyledLabel>
             <StyledInput
@@ -113,7 +102,7 @@ const ContactSection: React.FC = (): JSX.Element => {
         <input type="hidden" name="_template" value="basic" />
       </StyledForm>
       <StyledConnectWithMeWrapper>
-        <h2>Let&apos;s connect</h2>
+        <StyledH2>Let&apos;s connect</StyledH2>
         <StyledFindMeHere>
           <a href={fullLinkedInLink} target="_blank" rel="noopener noreferrer">
             <LinkedinStyled
@@ -128,15 +117,6 @@ const ContactSection: React.FC = (): JSX.Element => {
               onMouseEnter={() => handleAnimation(2)}
               onMouseLeave={() => handleAnimation(2)}
             />
-          </a>
-          <a href={fullEmailToLink} target="_blank" rel="noopener noreferrer">
-            <ResizableEmail
-              style={EmailAnimation}
-              onMouseEnter={() => handleAnimation(4)}
-              onMouseLeave={() => handleAnimation(4)}
-            >
-              <Image src="/email.svg" height={60} width={60} alt="email" />
-            </ResizableEmail>
           </a>
         </StyledFindMeHere>
       </StyledConnectWithMeWrapper>
