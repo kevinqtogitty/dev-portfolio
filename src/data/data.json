@@ -32,9 +32,9 @@
       "card_description": "Real-time chat app in the style of AIM and Windows XP using websockets",
       "description": "A real-time chat application using websockets via socket.io. Made in the the style of AIM from the early 2000s. Allows a user to create a ScreenName and private room, other users can join that room given the code and chat with each other. Yes, it even contains those familiar AIM notification sounds!",
       "bulletPoints": [
-        "Uses websockets to send and receive messages via react hooks",
-        "Contains notifcation sounds for new messages & users leaving/entering the chatroom",
-        "Uses xp.css for the styling"
+        "Developed a realtime chat application in the style of AIM from windows XP",
+        "Implemented websockets w/ socket.io to allow for realtime updates between users",
+        "Implemented notification sounds of the original AOL messenger"
       ]
     },
     "technologies": [
@@ -59,9 +59,11 @@
       "card_description": "Photography portfolio and E-commerce store powered by Stripe",
       "description": "A desktop/mobile friendly website to host my personal photography projects. Has a print store which uses the prebuilt checkout from the Stripe API. Store cart state migrated from Context API to Redux Toolkit.",
       "bulletPoints": [
-        "Implemented Stripe Checkout for print purchases",
-        "Deployed on CloudFlare CDN",
-        "React-Spring menu/shopping cart animations"
+        "Implemented payment and billing functionality via Stripe API",
+        "Reduced global content delivery wait times by deploying to a CDN (Cloud Distributed Network)",
+        "Implemented a mobile first design providing users an improved viewing experience on mobile devices",
+        "Improved user experience using physics based animations w/ React-Spring",
+        "Implemented Redux Toolkit to manage state"
       ]
     },
     "technologies": [
@@ -88,11 +90,11 @@
       "card_description": "Fullstack MERN Team announcement application",
       "description": "A fullstack webapp to create Teams and add members via a randomly generated code. Allows a user to join other teams, see their announcements, and post their own announcements via TipTap rich text editor. Made to make team managment and organization simpler.",
       "bulletPoints": [
-        "MERN stack application",
-        "TipTap rich editor to generate/convert html & JSON",
-        "CRUD operations via Express RestAPI",
-        "Data is saved to MongoDB",
-        "Uses a lightweight Redux alternative, Zustand, for state management"
+        "Implemented user authentication and verification to secure sensitive user and application data using Firebase",
+        "Implemented a rich text editor called TipTap that converts HTML to JSON and vice versa",
+        "Implemented a database that stores user data in a NoSQL format w/ MongoDB",
+        "Improved accessibility by utilizing Radix primitives",
+        "Optimized state management by a lightweight Redux alternative, Zustand"
       ]
     },
     "technologies": [
@@ -119,8 +121,8 @@
       "description": "A fullstack serverless application which queries the TMDB database for currently and upcoming films depending on the country you select. Allows a user to create an account, login, and save/delete movies to & from their watchlist which is stored in a database",
       "bulletPoints": [
         "Implemented user authentication/storage via Firebase",
-        "User can save/remove movies to a persistent watchlist",
-        "Uses session storage for country chosen",
+        "User data is and saved movies are saved in Firestore DB",
+        "Implemented session storage to retain correctly chosen country of choise",
         "Fully responsive, changes based on device screen size"
       ]
     },
@@ -147,10 +149,10 @@
       "card_description": "Lightning fast JAMStack blog using AstroJS Framework",
       "description": "A clean and lightning fast jamstack blog to host my thoughts on cinema. Uses AstroJS to ship the least amount of code possible to increase page speed. This method also greatly improves SEO",
       "bulletPoints": [
-        "Built with AstroJS framework",
-        "Leverages SSR for speed",
-        "Fully responsive",
-        "Blazingly fast!"
+        "Implements partial hydration philosophy to deliver javascript only where necessary",
+        "Fully responsive design",
+        "Simplified navigation by using file-based routing",
+        "Built with AstroJS framework"
       ]
     },
     "technologies": [
