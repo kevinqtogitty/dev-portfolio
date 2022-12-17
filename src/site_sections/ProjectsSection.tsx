@@ -192,16 +192,15 @@ const ProjectsSection: React.FC = (): JSX.Element => {
                     >
                       Source code
                     </Anchor>
-                    <Anchor
-                      href={activeProject.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={
-                        activeProject.isFullyFunctional ? '' : 'notification'
-                      }
-                    >
-                      See it live
-                    </Anchor>
+                    {activeProject.isFullyFunctional ? (
+                      <Anchor
+                        href={activeProject.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        See it live
+                      </Anchor>
+                    ) : null}
                   </AnchorWrapper>
                 </ModalContentLeft>
                 <ModalContentRight>
