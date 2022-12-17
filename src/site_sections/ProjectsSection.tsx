@@ -302,6 +302,7 @@ const LoadingPercentage = styled(animated.span, {
   justifySelf: 'center',
   fontSize: '5rem',
   fontFamily: 'syncopate',
+  border: '2px solid red',
 });
 
 const Card = styled(animated.div, {
