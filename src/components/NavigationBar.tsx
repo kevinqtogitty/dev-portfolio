@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { AnimatedLink, MenuLink } from '../styles/stitches/navigation_styles';
 import { createStitches } from '@stitches/react';
 import {
@@ -58,7 +58,7 @@ const NavigationBar: React.FC = (): JSX.Element => {
           to="Page2"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
         >
           About
