@@ -40,7 +40,7 @@ const ProjectsSection: React.FC = (): JSX.Element => {
   const [isDialogActive, setIsDialogActive] = useState(false);
   const [loading, setLoading] = useState(false);
   const { ref, inView } = useInView({
-    threshold: 0.5,
+    threshold: 0.4,
   });
 
   const [activeProject, setActiveProject] = useState<Project>({
@@ -259,6 +259,7 @@ const ProjectCardContainer = styled('section', {
   display: 'grid',
   gap: '2rem',
   gridTemplateColumns: 'repeat(3, 1fr)',
+  border: '2px solid red',
 
   '@bp1': {
     gridTemplateColumns: 'repeat(2, 1fr)',
